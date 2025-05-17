@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Amministrazione2/FileManager/ImageUpload.aspx" hash="fffffff64ee0c077" filehash="2ec95af409fc67c0" flags="100000" assembly="App_Web_0tpeny15" type="ASP.filemanager_imageupload_aspx">
+    <filedeps>
+        <filedep name="/Amministrazione2/FileManager/ImageUpload.aspx" />
+        <filedep name="/Amministrazione2/FileManager/ImageUpload.aspx.cs" />
+        <filedep name="/Amministrazione2/FileManager/MPRidotto.master" />
+        <filedep name="/Amministrazione2/FileManager/MPRidotto.master.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,109 @@
+<!--METADATA TYPE="typelib" UUID="00000205-0000-0010-8000-00AA006D2EA4" NAME="ADODB Type Library" -->
+<!--METADATA TYPE="typelib" UUID="CD000000-8B95-11D1-82DB-00C04FB1625D" NAME="CDO for Windows 2000 Library" -->
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+
+Sub Application_OnStart
+	dim base_path, base_url, secure_url
+	
+	'*************************************************************************************************'
+	'SEZIONE DA VARIARE PER PUBBLICAZIONE'
+	'*************************************************************************************************'
+	base_path = "C:\inetpub\wwwroot\infoschede.it\"	'"
+	base_url = "www.infoschede.it"
+	secure_url = ""								'se lasciato vuoto non attiva SSL'
+	'*************************************************************************************************'
+	
+	
+	
+	
+	'*************************************************************************************************'
+	'IMPOSTAZIONI DI PUBBLICAZIONE '
+	'*************************************************************************************************'
+	'attivazione statistiche del sito'
+	Application("AZ_ID") = 1
+	
+	'lingue installabili'
+	Application("LINGUE") = Array("it")
+	'*************************************************************************************************'
+	
+	
+	'*************************************************************************************************'
+	'CONNESSIONI DATABASE E PATH DATI'
+	'*************************************************************************************************'
+	'connessione dblayers.mdb'
+	Application("L_conn_ConnectionString") = "Provider=SQLOLEDB.1;" &_
+										     "User ID=infoschede_db_usr;" &_
+										     "Password=jN4fjZ6eXS5rZJ3wXDgI;" &_
+										     "Initial Catalog=infoschede;" &_
+										     "Data Source=WIN-LFN767S368I\SQLEXPRESS01;"
+	
+	
+	Application("DATA_ARCHIVE_ConnectionString") 	= "Provider=SQLOLEDB.1;" &_
+													 "User ID=infoschede_db_usr;" & _
+													 "Password=jN4fjZ6eXS5rZJ3wXDgI;" & _
+													 "Initial Catalog=infoschede_archivio;" & _
+													 "Data Source=WIN-LFN767S368I\SQLEXPRESS01;"
+
+											   
+	'connessione database dati'
+	Application("DATA_ConnectionString") = Application("L_conn_ConnectionString")
+
+	Application("IMAGE_PATH") = base_path & "upload\"	'"
+	
+	Application("IMAGE_SERVER") = base_url & "/upload"
+	Application("SERVER_NAME") = base_url
+	
+	if secure_url<>"" then
+		Application("SECURE_IMAGE_SERVER") = secure_url & "/upload"
+		Application("SECURE_SERVER_NAME") = secure_url
+	else
+		Application("SECURE_IMAGE_SERVER") = ""
+		Application("SECURE_SERVER_NAME") = ""
+	end if
+	'*************************************************************************************************'
+	
+	
+	'*************************************************************************************************'
+	'PARAMETRI DI CONFIGURAZIONE MODULI AREA AMMINISTRATIVA'
+	'*************************************************************************************************'
+	'parametri generali'
+	Application("DISABLE_NEXTAIM_LINKS") = false
+	Application("PREFISSO_BARRA_AMMINISTRAZIONE_PERSONALIZZATA") = ""
+	
+	'parametri NextCom'
+	Application("NextCom_DefaultWorkGroup") = 1
+	Application("NextCrm") 					= false
+	'*************************************************************************************************'
+	
+	
+	'IMPOSTAZIONE PER SPEDIZIONE POSTA ELETTRONICA'
+	set Application("class_mailer_configuration") = Server.CreateObject("CDO.Configuration")
+	with Application("class_mailer_configuration").Fields
+		.Item(cdoSMTPServer) = "mail.infoschede.it"
+		.Item(cdoSMTPServerPort) = 587
+		.Item(cdoSendUsingMethod) = cdoSendUsingPort
+		
+		.Item(cdoSMTPAuthenticate) = cdoBasic
+		.Item(cdoSendUserName) = "webmaster@infoschede.it"
+		.Item(cdoSendPassword) = "Infoschede""=22"
+		
+		
+		
+	'	.Item(cdoSMTPServer) = "127.0.0.1"
+	'	.Item(cdoSendUsingMethod) = cdoPostUsingPickup
+	'	.Item(cdoSMTPServerPickupDirectory) = "C:\inetpub\mailroot_mailup_relay\Pickup"
+	'	.Item(cdoSMTPAuthenticate) = cdoAnonymous
+		.Item(cdoURLGetLatestVersion) = true
+		.update
+	end with
+	'*************************************************************************************************'
+	
+End Sub
+
+ 	
+Sub Session_OnStart
+     Session.LCID = 1040
+
+End Sub
+
+</SCRIPT>

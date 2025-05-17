@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Amministrazione2/NextMemo2/CreaCatalogo.aspx" hash="fffffff64ee0c077" filehash="b79e4704a7d7a5a1" flags="100000" assembly="App_Web_iqjgs1fd" type="ASP.nextmemo2_creacatalogo_aspx">
+    <filedeps>
+        <filedep name="/Amministrazione2/NextMemo2/CreaCatalogo.aspx" />
+        <filedep name="/Amministrazione2/NextMemo2/CreaCatalogo.aspx.cs" />
+    </filedeps>
+</preserve>

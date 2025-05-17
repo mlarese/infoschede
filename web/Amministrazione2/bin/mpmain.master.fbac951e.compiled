@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Amministrazione2/NextComment/MPMain.master" hash="358a9b8cb" filehash="4d1be74b59968c98" flags="100000" assembly="App_Web_g0epfyfb" type="ASP.nextcomment_mpmain_master">
+    <filedeps>
+        <filedep name="/Amministrazione2/NextComment/MPMain.master" />
+        <filedep name="/Amministrazione2/NextComment/MPMain.master.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,245 @@
+[
+[
+"id_lay": "8933", 
+"id_pag": "1", 
+"id_tipo": "2", 
+"z_order": "1", 
+"nome": "NEXT-aim/next-logo.gif", 
+"visibile": "True", 
+"x": "56", "y": "73", 
+"largo": "308", 
+"alto": "428", 
+"testo": "", 
+"format": [[1, 1, "http://www.next-aim.com", [1, 800, 600], "testo alternativo", "qui metti il titolo"]], 
+"html": "", 
+"aspcode": "", 
+"RTF": "", 
+"checksum_stili": "abc", 
+"tipo_contenuto": "A"
+], 
+
+[
+"id_lay": "8934", 
+"id_pag": "1", 
+"id_tipo": "1", 
+"z_order": "2", 
+"nome": "testo N°3", 
+"visibile": "True", 
+"x": "291", 
+"y": "464", 
+"largo": "84", 
+"alto": "36", 
+"testo": "contattaci
+
+area riservata", 
+"format": [
+	[1, "p", #left, 100], 
+	[12, "p", #left, 150], 
+	[13, "p", #left, 100], 
+	[1, 10, "mailto:info@next-aim.com", [0], "Arial", [#bold, #underline], 10, "#FF9B04", "aggiungi il titolo", 0], 
+	[11, 12, "Arial", [#bold], 10, "#FF9B04", 0], 
+	[13, 26, "amministrazione", [1, 800, 600], "Arial", [#bold, #underline], 10, "#FF9B04", "aggiungi il titolo", 0]
+], 
+"html": "", 
+"aspcode": "", 
+"RTF": "{\rtf1\ansi\deff0 {\fonttbl{\f0\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red255\green155\blue4;}{\stylesheet{\s0\fs24 Normal Text;}
+}\pard \f0\fs24{\b\ul\fs20\cf1 contattaci}{\pard \b\fs20\cf1\par
+\par
+}{\pard \b\ul\fs20\cf1 area riservata\par}}", 
+"checksum_stili": "abc", 
+"tipo_contenuto": "A"
+], 
+
+[
+"id_lay": "8935", 
+"id_pag": "1", 
+"id_tipo": "2", 
+"z_order": "3", 
+"nome": "NEXT-aim/coming-soon.gif", 
+"visibile": "True", 
+"x": "396", 
+"y": "36", 
+"largo": "374", 
+"alto": "35", 
+"testo": "", 
+"format": [
+	[1, 1, "testo alternativo", "qui metti il titolo"]
+], 
+"html": "", 
+"aspcode": "", 
+"RTF": "", 
+"checksum_stili": "abc", 
+"tipo_contenuto": "A"], 
+
+[
+"id_lay": "8936", 
+"id_pag": "1", 
+"id_tipo": "1", 
+"z_order": "4", 
+"nome": "Bozzaegittocapodanno.txt", 
+"visibile": "True", 
+"x": "396", 
+"y": "103", 
+"largo": "497", 
+"alto": "405", 
+"testo": "PROGRAMMA
+ Dal 29 dicembre al 6 gennaio 
+ 
+ 1° giorno - 29 dicembre :  ITALIA / CAIRO 
+ Partenza per il Cairo voli di linea Alitalia via Milano. All'arrivo trasferimento in hotel e sistemazione nelle camere riservate. Cena e pernottamento in hotel.   
+ 
+ 2° giorno - 30 dicembre : CAIRO/ASWAN 
+ Pensione completa. In mattinata partenza con volo per Aswan; imbarco sulla M/N e sistemazione nelle cabine. Possibilità di effettuare l'escursione facoltativa in aereo per Abu Simbel. Nel pomeriggio escursione in 'feluca', tipica imbarcazione locale, attorno all'isola Elefantina. Pernottamento a bordo.    
+ 
+ 3° giorno - 31 dicembre : ASWAN / KOM OMBO
+ Pensione completa. Al mattino visita della grande diga ed al tempio di Philae, originariamente posto sull'omonima isola e trasportato in tempi moderni sulla vicina isola di Agilkia per impedire che venisse sommerso dalle acque del bacino formatosi con la costruzione della nuova diga. Nel pomeriggio partenza per Kom Ombo e visita al tempio dedicato al dio Sobek, il dio coccodrillo, e a Haroeris, il dio Horus. Proseguimento verso Edfu. Veglione di Capodanno a bordo. Pernottamento a bordo.    
+ 
+ 4° giorno - 1 gennaio : EDFU / LUXOR
+ Trattamento di pensione completa. Al mattino trasferimento in carrozzella e visita al tempio di Horus, il dio dalla testa di falco, terminato in epoca tolemaica ed eccelso 'riassunto' di tutta la tradizione egizia. Proseguimento della navigazione per Esna e passaggio della chiusa. Partenza per Luxor, l'antica città di Tebe. Pernottamento a bordo.    
+ 
+", 
+"format": [
+	[1, "p", #left, 100], 
+	[11, "p", #left, 100], 
+	[42, "p", #left, 200], 
+	[44, "p", #left, 100], 
+	[88, "p", #left, 100], 
+	[253, "p", #left, 100], 
+	[255, "p", #left, 100], 
+	[295, "p", #left, 100], 
+	[604, "p", #left, 100], 
+	[606, "p", #left, 100], 
+	[650, "p", #left, 100], 
+	[1147, "p", #left, 100], 
+	[1149, "p", #left, 100], 
+	[1187, "p", #left, 100], 
+	[1541, "p", #left, 100], 
+	[1543, "p", #left, 100], 
+	[1, 9, "Arial", [#bold], 12, "#808080", 0], 
+	[10, 44, "Arial", [#plain], 12, "#808080", 0], 
+	[45, 86, "Arial", [#bold], 12, "#808080", 0], 
+	[87, 124, "Arial", [#plain], 12, "#808080", 0], 
+	[125, 143, "", [1, 800, 600], "Arial", [#underline], 12, "#808080", <Void>, 0], 
+	[144, 255, "Arial", [#plain], 12, "#808080", 0], 
+	[256, 293, "Arial", [#bold], 12, "#808080", 0], 
+	[294, 606, "Arial", [#plain], 12, "#808080", 0], 
+	[607, 648, "Arial", [#bold], 12, "#808080", 0], 
+	[649, 1149, "Arial", [#plain], 12, "#808080", 0], 
+	[1150, 1185, "Arial", [#bold], 12, "#808080", 0], 
+	[1186, 1536, "Arial", [#plain], 12, "#808080", 0]
+], 
+"html": "", 
+"aspcode": "", 
+"RTF": "{\rtf1\ansi\deff0 {\fonttbl{\f0\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue224;\red224\green0\blue0;\red224\green0
+\blue224;\red128\green128\blue128;}{\stylesheet{\s0\fs24 Normal Text;}}\margl1800 \margr1800 \margt1440 \margb1440 \pard \f0\fs24
+{\b\cf4 PROGRAMMA}{\pard \cf4\par
+ Dal 29 dicembre al 6 gennaio \par
+ \par
+ }{\pard \b\cf4 1\'b0 giorno - 29 dicembre \:  ITALIA / CAIRO }{\pard \cf4\par
+ Partenza per il Cairo voli di linea }{\pard \ul\cf4 Alitalia via Milano}{\pard \cf4 . All'arrivo trasferimento in hotel e sistemazione nelle camere riservate. Cena e pernottamento in hotel.   
+\par
+ \par
+ }{\pard \b\cf4 2\'b0 giorno - 30 dicembre \: CAIRO/ASWAN }{\pard \cf4\par
+ Pensione completa. In mattinata partenza con volo per Aswan; imbarco sulla M/N e sistemazione nelle cabine. Possibilit\'e0 di effettuare l'escursione facoltativa in aereo per Abu Simbel. Nel pomeriggio escursione in 'feluca', tipica imbarcazione locale, attorno all'isola Elefantina. Pernottamento a bordo.    
+\par
+ \par
+ }{\pard \b\cf4 3\'b0 giorno - 31 dicembre \: ASWAN / KOM OMBO}{\pard \cf4\par
+ Pensione completa. Al mattino visita della grande diga ed al tempio di Philae, originariamente posto sull'omonima isola e trasportato in tempi moderni sulla vicina isola di Agilkia per impedire che venisse sommerso dalle acque del bacino formatosi con la costruzione della nuova diga. Nel pomeriggio partenza per Kom Ombo e visita al tempio dedicato al dio Sobek, il dio coccodrillo, e a Haroeris, il dio Horus. Proseguimento verso Edfu. Veglione di Capodanno a bordo. Pernottamento a bordo.    
+\par
+ \par
+ }{\pard \b\cf4 4\'b0 giorno - 1 gennaio \: EDFU / LUXOR}{\pard \cf4\par
+ Trattamento di pensione completa. Al mattino trasferimento in carrozzella e visita al tempio di Horus, il dio dalla testa di falco, terminato in epoca tolemaica ed eccelso 'riassunto' di tutta la tradizione egizia. Proseguimento della navigazione per Esna e passaggio della chiusa. Partenza per Luxor, l'antica citt\'e0 di Tebe. Pernottamento a bordo. }
+{\pard \plain\fs24    \par
+ \par
+}}", 
+"checksum_stili": "abc", 
+"tipo_contenuto": "A"
+], 
+
+[
+"id_lay": "8937", 
+"id_pag": "1", 
+"id_tipo": "3", 
+"z_order": "5", 
+"nome": "haus5.swf", 
+"visibile": "True", 
+"x": "100", 
+"y": "200", 
+"largo": "100", 
+"alto": "110", 
+"testo": "play=true; loop=true; quality=high; scale=autoSize; bgcolor=#FFFFFF; allowScriptAccess=sameDomain; align=default;", 
+"format": [], 
+"html": "", 
+"aspcode": "c", 
+"RTF": "", 
+"checksum_stili": "abc", 
+"tipo_contenuto": "A"
+], 
+
+[
+"id_lay": "8938", 
+"id_pag": "1", 
+"id_tipo": "5", 
+"z_order": "6", 
+"nome": "Testo strutturato", 
+"visibile": "True", 
+"x": "300", 
+"y": "500", 
+"largo": "497", 
+"alto": "405", 
+"testo": "PROGRAMMA 
+Dal 29 dicembre al 6 gennaio  
+1° giorno - 29 dicembre :  ITALIA / CAIRO 
+Partenza per il Cairo voli di linea  Alitalia via Milano. All'arrivo trasferimento in hotel e sistemazione nelle camere riservate. Cena e pernottamento in hotel. 
+2° giorno - 30 dicembre : CAIRO/ASWAN 
+Pensione completa. In mattinata partenza con volo per Aswan; imbarco sulla M/N e sistemazione nelle cabine. Possibilità di effettuare l'escursione facoltativa in aereo per Abu Simbel. Nel pomeriggio escursione in 'feluca', tipica imbarcazione locale, attorno all'isola Elefantina. Pernottamento a bordo.
+", 
+"format": [
+	[1, 10, "H1"], 
+	[12, 41, "P"], 
+	[43, 84, "H1"], 
+	[86, 247, "P"], 
+	[249, 286, "H1"], 
+	[288, 590, "P"], 
+	[1, 10, [#bold]], 
+	[41, 84, [#bold]], 
+	[85, 101, "http://www.next-aim.com", [1, 500, 400], [#bold, #underline], "qui metti il title"], 
+	[248, 286, [#bold]]
+], 
+"html": "", 
+"aspcode": "d", 
+"RTF": "{\rtf1\ansi\deff0 {\fonttbl{\f0\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}{\stylesheet{\s0\fs24 Normal Text;}
+}\pard \f0\fs24{\b\fs32 PROGRAMMA }\pard \plain\fs24\par
+Dal 29 dicembre al 6 gennaio {\b  }{\pard \b\fs32\par
+1\'b0 giorno - 29 dicembre \:  ITALIA / CAIRO }{\pard \b\ul\cf1\par
+Partenza per il }\pard \plain\fs24 Cairo voli di linea  Alitalia via Milano. All'arrivo trasferimento in hotel e sistemazione nelle camere riservate. Cena e pernottamento in hotel. 
+{\b\fs32\par
+2\'b0 giorno - 30 dicembre \: CAIRO/ASWAN }\pard \plain\fs24\par
+Pensione completa. In mattinata partenza con volo per Aswan; imbarco sulla M/N e sistemazione nelle cabine. Possibilit\'e0 di effettuare l'escursione facoltativa in aereo per Abu Simbel. Nel pomeriggio escursione in 'feluca', tipica imbarcazione locale, attorno all'isola Elefantina. Pernottamento a bordo.
+\par
+}", 
+"checksum_stili": "md5 checksum goes he", 
+"tipo_contenuto": "A"
+], 
+
+[
+"id_lay": "7", 
+"id_pag": "1", 
+"id_tipo": "4", 
+"z_order": "7", 
+"nome": "background_bianco", 
+"visibile": "true", 
+"x": "85", 
+"y": "531", 
+"largo": "200", 
+"alto": "150", 
+"testo": "color:=#FFFFFF; image=; position=; repeat=; border:=; ", 
+"format": [], 
+"html": "", 
+"aspcode": "", 
+"RTF": "", 
+"checksum_stili": "", 
+"tipo_contenuto": "A"
+]
+
+]

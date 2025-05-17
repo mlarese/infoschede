@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\...\NextComment\", ".", "{6493054F-E391-4C2E-92B9-6A68B08FFFF9}"
+	ProjectSection(WebsiteProperties) = preProject
+		ProjectReferences = "{6489D51F-0076-422F-8875-BF1502158F45}|NextFramework2.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/NextComment"
+		Debug.AspNetCompiler.PhysicalPath = "\\Next-server\frameworks\NextFramework2\Admin\NextComment\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\NextComment\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/NextComment"
+		Release.AspNetCompiler.PhysicalPath = "\\Next-server\frameworks\NextFramework2\Admin\NextComment\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\NextComment\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextFramework2", "..\..\NextFramework2.csproj", "{6489D51F-0076-422F-8875-BF1502158F45}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6493054F-E391-4C2E-92B9-6A68B08FFFF9}.Debug|.NET.ActiveCfg = Debug|.NET
+		{6493054F-E391-4C2E-92B9-6A68B08FFFF9}.Debug|.NET.Build.0 = Debug|.NET
+		{6493054F-E391-4C2E-92B9-6A68B08FFFF9}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{6493054F-E391-4C2E-92B9-6A68B08FFFF9}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{6493054F-E391-4C2E-92B9-6A68B08FFFF9}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{6493054F-E391-4C2E-92B9-6A68B08FFFF9}.Release|.NET.ActiveCfg = Debug|.NET
+		{6493054F-E391-4C2E-92B9-6A68B08FFFF9}.Release|.NET.Build.0 = Debug|.NET
+		{6493054F-E391-4C2E-92B9-6A68B08FFFF9}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{6493054F-E391-4C2E-92B9-6A68B08FFFF9}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{6493054F-E391-4C2E-92B9-6A68B08FFFF9}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{6489D51F-0076-422F-8875-BF1502158F45}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{6489D51F-0076-422F-8875-BF1502158F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6489D51F-0076-422F-8875-BF1502158F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6489D51F-0076-422F-8875-BF1502158F45}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6489D51F-0076-422F-8875-BF1502158F45}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6489D51F-0076-422F-8875-BF1502158F45}.Release|.NET.ActiveCfg = Release|Any CPU
+		{6489D51F-0076-422F-8875-BF1502158F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6489D51F-0076-422F-8875-BF1502158F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6489D51F-0076-422F-8875-BF1502158F45}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6489D51F-0076-422F-8875-BF1502158F45}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

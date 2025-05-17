@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /amministrazione
+Allow: /amministrazione/library/google_maps
+Sitemap: /sitemap.xml
+Allow: /

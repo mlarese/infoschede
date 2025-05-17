@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Amministrazione2/FileManager/MPRidotto.master" hash="fffffff64ee0c077" filehash="27e9c16718c73a78" flags="100000" assembly="App_Web_khuvtnhp" type="ASP.filemanager_mpridotto_master">
+    <filedeps>
+        <filedep name="/Amministrazione2/FileManager/MPRidotto.master" />
+        <filedep name="/Amministrazione2/FileManager/MPRidotto.master.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,41 @@
+Access to the path 'c:\inetpub\wwwroot\infoschede.it\web\App_Data\wkhtmltopdf\api-ms-win-crt-conio-l1-1-0.dll' is denied.
+Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
+
+Exception Details: System.UnauthorizedAccessException: Access to the path 'c:\inetpub\wwwroot\infoschede.it\web\App_Data\wkhtmltopdf\api-ms-win-crt-conio-l1-1-0.dll' is denied.
+
+ASP.NET is not authorized to access the requested resource. Consider granting access rights to the resource to the ASP.NET request identity. ASP.NET has a base process identity (typically {MACHINE}\ASPNET on IIS 5 or Network Service on IIS 6 and IIS 7, and the configured application pool identity on IIS 7.5) that is used if the application is not impersonating. If the application is impersonating via <identity impersonate="true"/>, the identity will be the anonymous user (typically IUSR_MACHINENAME) or the authenticated request user.
+
+To grant ASP.NET access to a file, right-click the file in File Explorer, choose "Properties" and select the Security tab. Click "Add" to add the appropriate user or group. Highlight the ASP.NET account, and check the boxes for the desired access.
+
+Source Error:
+
+
+Line 265:
+Line 266:        // pdf
+Line 267:        if (Session["inviato_" + StnTipo + "_" + (schedaId > 0 ? schedaId : ddtId)].ToString() == "ok" ||
+Line 268:            NextPdf.GetPdfFromPageUrl(pageUrl, basePath + pdfPath, true, true, 0, 25, 1, false, "", true))
+Line 269:        {
+
+Source File: c:\inetpub\wwwroot\infoschede.it\web\Plugin\InviaEmail.ascx.cs    Line: 267
+
+Stack Trace:
+
+
+[UnauthorizedAccessException: Access to the path 'c:\inetpub\wwwroot\infoschede.it\web\App_Data\wkhtmltopdf\api-ms-win-crt-conio-l1-1-0.dll' is denied.]
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) +13056497
+   System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost) +776
+   System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share) +65
+   NReco.PdfGenerator.HtmlToPdfConverter.EnsureWkHtmlLibs() +497
+   NReco.PdfGenerator.HtmlToPdfConverter.GeneratePdfInternal(String[] htmlFiles, String inputContent, String coverHtml, String outputPdfFilePath, Stream outputStream) +47
+   NReco.PdfGenerator.HtmlToPdfConverter.GeneratePdf(String htmlContent, String coverHtml, Stream output) +68
+   NReco.PdfGenerator.HtmlToPdfConverter.GeneratePdf(String htmlContent, String coverHtml) +42
+   NReco.PdfGenerator.HtmlToPdfConverter.GeneratePdf(String htmlContent) +7
+   NextPdfTools.NextPdf.GetPdfFromPageUrl(String pageUrl, String pdfPath, Boolean isPaged, Boolean disableCache, Int32 width, Double xPos, Double yPos, Boolean border, String pdfFileName, Boolean isDateDirectory, Boolean horizontal) +1545
+   NextPdfTools.NextPdf.GetPdfFromPageUrl(String pageUrl, String pdfPath, Boolean isPaged, Boolean disableCache, Int32 width, Double xPos, Double yPos, Boolean border, String pdfFileName, Boolean isDateDirectory) +96
+   Plugin_InviaEmail.Invia_Click(Object sender, EventArgs e) in c:\inetpub\wwwroot\infoschede.it\web\Plugin\InviaEmail.ascx.cs:267
+   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +9782078
+   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +204
+   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +12
+   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +15
+   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +35
+   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1639

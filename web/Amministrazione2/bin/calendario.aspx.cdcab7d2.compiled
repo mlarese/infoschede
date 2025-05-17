@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Amministrazione2/Calendario.aspx" hash="fffffff64ee0c077" filehash="6fc0f16f44dbd74b" flags="100000" assembly="App_Web_45zgfexu" type="ASP.calendario_aspx">
+    <filedeps>
+        <filedep name="/Amministrazione2/Calendario.aspx" />
+        <filedep name="/Amministrazione2/Calendario.aspx.cs" />
+    </filedeps>
+</preserve>

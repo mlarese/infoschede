@@ -1,0 +1,28 @@
+ATTIVITA
+
+- Amministratore: 	può tutto
+- Creatore: 		può modificare e cancellare solo le bozze da lui create ma non rispondere ad una bozza
+- Utente: 			non vede le bozze altrui, vede in base ad AL o se creatore, 
+					non può modificare ne cancellare,
+					può solo aggiungere note o rispondere, se non è conclusa, o concludere
+N.B.: 	La risposta chiude la domanda.
+		Ogni volta che modifico un'attività viene aggiornata la data di creazione e il mittente.
+
+PRATICHE
+
+- Amministratore:	può tutto
+- Power User:		può tutto delle pratiche di cui ha accesso tramite AL
+- Creatore:			può tutto di ciò che ha creato
+- Utente:			può solo vedere la scheda se AL o se creatore
+N.B.: 	La modifica della pratica registra la data e l'utente che la effettua.
+		Solo l'amministratore può cancellare la pratica anche se esistono attività aperte.
+
+DOCUMENTI
+
+- Amministratore:	può tutto
+- Power User:		può tutto dei documenti di cui ha accesso tramite AL
+- Creatore:			può tutto di ciò che ha creato
+- Utente:			può solo vedere la scheda se AL o se creatore
+N.B.: 	La modifica del documento registra la data e l'utente che la effettua.
+		Solo l'amministratore può cancellare il documento anche se esistono attività collegate.
+		Nessuno può cancellare il documento se ha un file associato.

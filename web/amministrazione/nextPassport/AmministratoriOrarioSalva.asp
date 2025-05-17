@@ -1,0 +1,33 @@
+<%@ Language=VBScript CODEPAGE=65001%>
+<% Option Explicit %>
+<% response.charset = "UTF-8" %>
+<!--#INCLUDE FILE="../library/ClassSalva.asp" -->
+<!--#INCLUDE FILE="../library/Tools.asp" -->
+<%
+dim Classe
+	Set Classe = New OBJ_Salva
+	
+	'Impostazione parametri
+	Classe.ConnectionString 		= Application("DATA_ConnectionString")
+	Classe.Requested_Fields_List	= "tfn_ao_min_lav_lun;tfn_ao_min_lav_mar;tfn_ao_min_lav_mer;tfn_ao_min_lav_gio;tfn_ao_min_lav_ven;tfn_ao_min_lav_sab;tfn_ao_min_lav_dom;"
+	Classe.Checkbox_Fields_List 	= ""
+	Classe.Page_Ins_Form			= ""
+	Classe.Page_Mod_Form			= ""
+	Classe.Next_Page				= "AmministratoriOrarioMod.asp?ID_ADMIN=" & cIntero(request("ID_ADMIN"))	'impostata nella gestione delle relazioni
+	Classe.Next_Page_ID				= FALSE
+	Classe.Table_Name				= "tb_admin_orario"
+	Classe.id_Field					= "ao_id"
+	Classe.Read_New_ID				= TRUE
+	Classe.isReport 				= TRUE
+	Classe.Gestione_Relazioni 		= TRUE
+
+'definizione eventuali operazioni su relazioni	
+Sub Gestione_Relazioni_record(conn, rs, ID)
+	'imposta parametri per passare alla pagina successiva
+	Classe.isReport = FALSE
+end Sub
+
+'salvataggio/modifica dati
+Classe.Salva()
+	
+%>

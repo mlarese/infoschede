@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Amministrazione2/NextComment/Delete.aspx" hash="358a9b8cb" filehash="84b0cf50f12ff1e6" flags="100000" assembly="App_Web_lhygo0oy" type="ASP.nextcomment_delete_aspx">
+    <filedeps>
+        <filedep name="/Amministrazione2/NextComment/Delete.aspx" />
+        <filedep name="/Amministrazione2/NextComment/Delete.aspx.cs" />
+        <filedep name="/Amministrazione2/NextComment/MPRidotto.master" />
+        <filedep name="/Amministrazione2/NextComment/MPRidotto.master.cs" />
+    </filedeps>
+</preserve>

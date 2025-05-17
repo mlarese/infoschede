@@ -1,0 +1,25 @@
+﻿<asp:Calendar runat="server" BorderColor="#CCCCCC" CellPadding="2" CssClass="calendar"
+              Font-Names="Trebuchet MS" Font-Size="68.75%" ForeColor="#3D3D3D">
+    <TitleStyle CssClass="title" BackColor="#D39238" Font-Size="100%" />
+    <NextPrevStyle CssClass="nextprev" />
+    <DayHeaderStyle CssClass="header" BackColor="#F3F3F3" />
+    <OtherMonthDayStyle CssClass="othermonth" />
+    <DayStyle CssClass="day" />
+    <TodayDayStyle CssClass="today" Font-Bold="True" />
+    <SelectedDayStyle CssClass="selectedday" BackColor="#D39238" ForeColor="White" />
+    <WeekendDayStyle CssClass="weekendday" />
+    <SelectorStyle CssClass="selector" />
+</asp:Calendar>
+
+ <asp:TreeView SkinId="Simple"
+      Font-Names="Verdana" 
+      ForeColor="Black"
+      HoverNodeStyle-Font-Underline="true"
+      HoverNodeStyle-ForeColor="#dd5555"
+      SelectedNodeStyle-ForeColor="#dd5555"
+      SelectedNodeStyle-Font-UnderLine="true"
+      NoExpandImageUrl="images/bullets/square2.gif"
+      ShowExpandCollapse="true"
+      NodeIndent="10"
+      Font-Size="8pt"
+      runat="server"/>

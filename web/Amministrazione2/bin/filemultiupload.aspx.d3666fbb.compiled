@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Amministrazione2/FileManager/FileMultiUpload.aspx" hash="fffffff64ee0c077" filehash="2f692ec37360327e" flags="100000" assembly="App_Web_0tpeny15" type="ASP.filemanager_filemultiupload_aspx">
+    <filedeps>
+        <filedep name="/Amministrazione2/FileManager/FileMultiUpload.aspx" />
+        <filedep name="/Amministrazione2/FileManager/FileMultiUpload.aspx.cs" />
+        <filedep name="/Amministrazione2/FileManager/MPRidotto.master" />
+        <filedep name="/Amministrazione2/FileManager/MPRidotto.master.cs" />
+    </filedeps>
+</preserve>

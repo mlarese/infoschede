@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Amministrazione2/NextComment/Default.aspx" hash="358a9b8cb" filehash="a121962f09cb28e6" flags="100000" assembly="App_Web_g0epfyfb" type="ASP.nextcomment_default_aspx">
+    <filedeps>
+        <filedep name="/Amministrazione2/NextComment/Default.aspx" />
+        <filedep name="/Amministrazione2/NextComment/Default.aspx.cs" />
+    </filedeps>
+</preserve>

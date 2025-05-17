@@ -1,0 +1,960 @@
+﻿/***** lettera vettura *****/
+div.letteravettura
+{
+    float:left;
+    width:98%;
+    border:2px solid #599ED1;
+    margin-bottom:10px;
+}
+
+div.letteravettura *
+{
+    font-size:14px;
+    font-style:italic;
+}
+
+div.letteravettura div.mittente,
+div.letteravettura div.destinatario,
+div.letteravettura div.trasportatore,
+div.letteravettura div.dati
+{
+    float:left;
+    width:100%;
+}
+
+div.letteravettura div.sx,
+div.letteravettura div.dx
+{
+    float:left;
+    width:48%;
+    padding:5px;
+}
+
+div.letteravettura div.bottom
+{
+    float:left;
+    width:100%;
+    padding-bottom:20px;
+}
+
+div.letteravettura h2
+{
+    float:left;
+    width:100%;
+    font-size:15px;
+    margin-top:10px;
+}
+
+div.letteravettura div.destinatario
+{
+    margin-top:20px;
+}
+
+div.letteravettura div.trasportatore
+{
+    margin-bottom:10px;
+}
+
+div.letteravettura p
+{
+    float:left;
+    width:100%;
+}
+
+div.letteravettura p span,
+div.letteravettura p input
+{
+    float:left;
+    width:auto;
+    margin-right:10px;
+}
+
+div.letteravettura div.mittente p
+{
+    margin-bottom:2px;
+}
+
+div.letteravettura div.destinatario h2,
+div.letteravettura div.destinatario p
+{
+    margin-bottom:10px;
+}
+
+div.letteravettura div.trasportatore p
+{
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+div.letteravettura div.dati p
+{
+    margin-bottom:6px;
+}
+
+div.letteravettura div.dati span
+{
+    font-weight:bold;
+}
+
+div.letteravettura div.dati input
+{
+    color:#000 !important;
+}
+
+div.letteravettura div.bottom div.sx h2
+{
+    width:88%;
+    background:url(../../upload/1/images/interfaccia/puntini_lista_2.jpg) no-repeat 140px 12px;
+}
+
+div.letteravettura div.bottom div.dx h2
+{
+    width:88%;
+    background:url(../../upload/1/images/interfaccia/puntini_lista_2.jpg) no-repeat 112px 12px;
+}
+
+
+/***** lettera accompagnamento *****/
+div.letteraaccompagnamento
+{
+    float:left;
+    width:90%;
+    margin:40px;
+}
+/*
+div.letteraaccompagnamento div.testata
+{
+    float:left;
+    width:100%;
+    margin-bottom:5px;
+    background-color:#CCCCCC;
+}
+
+div.letteraaccompagnamento div.testata div.titolo
+{
+    float:left;
+    width:60%;
+    padding-top:5px;
+    text-align:center;
+}
+
+div.letteraaccompagnamento div.testata div.titolo h1
+{
+    float:left;
+    width:100%;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+div.letteraaccompagnamento div.testata div.titolo div.link
+{
+    float:left;
+    width:100%;
+}
+
+div.letteraaccompagnamento div.testata div.titolo div.link a
+{
+    font-size:14px;
+    font-weight:bold;
+    color:#494949;
+}
+
+div.letteraaccompagnamento div.testata div.dati
+{
+    float:left;
+    width:40%;
+}
+
+div.letteraaccompagnamento div.testata div.dati div.indirizzo
+{
+    float:left;
+    width:100%;
+    margin-bottom:15px;
+}
+
+div.letteraaccompagnamento div.testata div.dati div.indirizzo p
+{
+    float:left;
+    width:100%;
+    font-size:10px;
+    color:#494949;
+}
+
+div.letteraaccompagnamento div.testata div.dati div.indirizzo p a
+{
+    color:#494949;
+}
+
+div.letteraaccompagnamento div.testata div.dati h2
+{
+    float:left;
+    width:100%;
+    font-size:14px;
+    margin-bottom:15px;
+}
+*/
+div.letteraaccompagnamento div.intestazione
+{
+    float:left;
+    width:99%;
+    padding:2px;
+    padding-top:4px;
+    border:2px solid #494949;
+}
+
+div.letteraaccompagnamento div.intestazione span.label
+{
+    float:left;
+    font-size:15px;
+    font-style:italic;
+}
+
+div.letteraaccompagnamento div.intestazione span.numero
+{
+    margin-left:6px;
+}
+
+div.letteraaccompagnamento div.intestazione span.value
+{
+    float:left;
+    font-size:15px;
+    margin-left:6px;
+    margin-right:40px;
+}
+
+div.letteraaccompagnamento div.destinatario
+{
+    float:left;
+    width:99%;
+    margin-bottom:8px;
+    padding:2px;
+    padding-right:4px;
+    border:1px solid #494949;
+}
+
+div.letteraaccompagnamento div.destinatario div.intero
+{
+    float:left;
+    width:100%;
+    height:25px;
+}
+
+div.letteraaccompagnamento div.destinatario div.doppio
+{
+    float:left;
+    width:100%;
+    height:40px;
+}
+
+div.letteraaccompagnamento div.destinatario div.sx
+{
+    float:left;
+    width:58%;
+    height:50px;
+}
+
+div.letteraaccompagnamento div.destinatario div.alto
+{
+    float:left;
+    width:100%;
+    height:20px;
+}
+
+div.letteraaccompagnamento div.destinatario div.basso
+{
+    float:left;
+    width:100%;
+    height:20px;
+}
+
+div.letteraaccompagnamento div.destinatario div.dx
+{
+    float:left;
+    width:42%;
+    height:50px;
+}
+
+div.letteraaccompagnamento div.destinatario span.label
+{
+    float:left;
+    font-size:12px;
+    font-style:italic;
+    font-weight:bold;
+    text-align:right;
+}
+
+div.letteraaccompagnamento div.destinatario span.value
+{
+    float:left;
+    font-size:12px;
+}
+
+div.letteraaccompagnamento div.destinatario div.doppio span.label
+{
+    width:10%;
+    padding-top:2px;
+    margin-right:40px;
+}
+
+div.letteraaccompagnamento div.destinatario div.doppio span.value
+{
+    width:65%;
+    padding-top:2px;
+}
+
+div.letteraaccompagnamento div.destinatario div.doppio span.numero
+{
+    width:15%;
+    margin-right:0px;
+}
+
+div.letteraaccompagnamento div.destinatario div.intero span.label
+{
+    width:10%;
+    padding-top:2px;
+    margin-right:40px;
+}
+
+div.letteraaccompagnamento div.destinatario div.intero span.value
+{
+    width:30%;
+    padding-top:2px;
+}
+
+div.letteraaccompagnamento div.destinatario div.sx span.label
+{
+    width:17%;
+    margin-right:40px;
+}
+
+div.letteraaccompagnamento div.destinatario div.sx span.value
+{
+    width:50%;
+}
+
+div.letteraaccompagnamento div.destinatario div.sx span.corto
+{
+    width:10%;
+}
+
+div.letteraaccompagnamento div.destinatario div.dx span.label
+{
+    margin-top:10px;
+    margin-right:10px;
+}
+
+div.letteraaccompagnamento div.destinatario div.dx span.value
+{
+    margin-top:10px;
+}
+
+div.letteraaccompagnamento div.tabella
+{
+    float:left;
+    width:99%;
+    min-height:400px;
+    margin-bottom:8px;
+    padding-top:10px;
+    padding-right:6px;
+    border:1px solid #494949;
+}
+
+div.letteraaccompagnamento div.tabella div.dati
+{
+    float:left;
+    width:99%;
+}
+
+div.letteraaccompagnamento div.tabella div.dati table
+{
+    float:left;
+    width:100%;
+}
+
+div.letteraaccompagnamento div.tabella div.dati table thead tr
+{
+    background-color:#CCCCCC;
+}
+
+div.letteraaccompagnamento div.tabella div.dati table th
+{
+    font-size:12px;
+    padding:5px;
+    padding-left:12px;
+    text-align:left;
+}
+
+div.letteraaccompagnamento div.tabella div.dati table td
+{
+    font-size:12px;
+    padding-top:5px;
+    padding-right:5px;
+    padding-left:12px;
+    padding-bottom:2px;
+}
+
+div.letteraaccompagnamento div.fondo
+{
+    float:left;
+    width:100%;
+    padding-bottom:100px;
+    border-bottom:4px solid #CCCCCC;
+}
+
+div.letteraaccompagnamento div.fondo div.trasportatore
+{
+    float:left;
+    width:99%;
+    margin-bottom:10px;
+}
+
+div.letteraaccompagnamento div.fondo div.trasportatore div
+{
+    float:left;
+    width:60%;
+    min-height: 17px;
+    padding-top:1px;
+    border:1px solid #494949;
+}
+div.letteraaccompagnamento div.fondo div.trasportatore span.input
+{
+    float:left;
+    width:34%;
+    height:17px;
+    font-size:15px;
+    font-style:italic;
+    margin-left:10px;
+    padding-top:1px;
+    border:1px solid #494949;
+}
+
+div.letteraaccompagnamento div.fondo div.trasportatore div span.label
+{
+    float:left;
+    width:45%;
+    font-size:15px;
+    font-style:italic;
+}
+
+div.letteraaccompagnamento div.fondo div.trasportatore div span.value
+{
+    float:left;
+    width:50%;
+    font-size:15px;
+}
+
+div.letteraaccompagnamento div.fondo div.firme
+{
+    float:left;
+    width:71%;
+    margin-left:188px;
+}
+
+div.letteraaccompagnamento div.fondo div.firme div
+{
+    float:left;
+    width:100%;
+    margin-bottom:10px;
+}
+
+div.letteraaccompagnamento div.fondo div.firme span
+{
+    float:left;
+    width:48%;
+    font-size:14px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+div.letteraaccompagnamento div.fondo div.firme input
+{
+    float:left;
+    width:47%;
+    height:16px;
+    border:1px solid #494949;
+}
+
+
+/***** ddt *****/
+div.bolla
+{
+    float:left;
+    width:99%;
+    margin-top:20px;
+}
+
+div.bolla span.noborder
+{
+    float:left;
+    width:96%;
+    font-size:10px;
+    margin-bottom:5px;
+    padding:5px 15px 0px 15px;
+    text-align:center;
+}
+
+div.bolla div.contenitore
+{
+    float:left;
+    width:50%;
+    margin-right:40px;
+}
+
+div.bolla span.title
+{
+    float:left;
+    width:99%;
+    font-size:10px;
+    padding-left:2px;
+    padding-right:5px;
+    text-transform:uppercase;
+}
+
+div.bolla div.intestazione
+{
+    float:left;
+    width:100%;
+    margin-bottom:10px;
+}
+
+div.bolla div.intestazione div
+{
+    float:left;
+    width:28%;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:5px;
+    padding-top:5px;
+    border-left:1px solid #CCCCCC;
+    border-top:1px solid #CCCCCC;
+}
+
+div.bolla div.intestazione div.cf
+{
+    height:34px;
+    border-left:none;
+}
+
+div.bolla div.intestazione span.label
+{
+    float:left;
+    width:100%;
+    font-size:10px;
+    text-transform:uppercase;
+}
+
+div.bolla div.intestazione span.value
+{
+    float:left;
+    width:92%;
+    font-size:14px;
+    margin-top:5px;
+}
+
+div.bolla div.destinatario
+{
+    float:left;
+    width:44%;
+    margin-bottom:20px;
+}
+
+div.bolla div.destinatario div
+{
+    float:left;
+    width:97%;
+    padding:5px 5px 10px 10px;
+    border-left:1px solid #CCCCCC;
+    border-top:1px solid #CCCCCC;
+}
+
+div.bolla div.destinatario span.value
+{
+    float:left;
+    width:92%;
+    font-size:14px;
+    margin-top:5px;
+    padding-left:15px;
+}
+
+div.bolla div.tabella
+{
+    float:left;
+    width:766px;
+    min-height:400px;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:0px;
+    padding-right:0px;
+    border:1px solid #CCCCCC;
+}
+
+div.bolla div.tabella div.dati
+{
+    float:left;
+    width:100%;
+}
+
+div.bolla div.tabella div.dati table
+{
+    float:left;
+    width:100%;
+}
+
+div.bolla div.tabella div.dati table thead tr
+{
+    background-color:#CCCCCC;
+}
+
+div.bolla div.tabella div.dati table th
+{
+    font-size:12px;
+    padding:5px;
+    text-align:left;
+}
+
+div.bolla div.tabella div.dati table td
+{
+    font-size:14px;
+    padding:5px 5px 2px 5px;
+    vertical-align:top;
+}
+
+div.bolla div.tabella div.dati table .qta,
+div.bolla div.tabella div.dati table .prz_unit,
+div.bolla div.tabella div.dati table .rif_ns_scheda,
+div.bolla div.tabella div.dati table .garanzia,
+div.bolla div.tabella div.dati table .prz_unit,
+div.bolla div.tabella div.dati table .sconto
+{
+    text-align:center;
+}
+div.bolla div.tabella div.dati table .qta,
+div.bolla div.tabella div.dati table .sconto
+{
+    width:9%;
+}
+div.bolla div.tabella div.dati table .qta
+{
+    width:9%;
+}
+div.bolla div.tabella div.dati table .disabled
+{
+    display:none;
+    visibility:hidden;
+}
+
+div.bolla div.fondo
+{
+    float:left;
+    width:100%;
+    padding-bottom:40px;
+}
+
+div.bolla div.fondo table
+{
+    float:left;
+    width:100%;
+    border-left:1px solid #CCCCCC;
+}
+
+div.bolla div.fondo table td
+{
+    vertical-align:top;
+    border-right:1px solid #CCCCCC;
+    border-bottom:1px solid #CCCCCC;
+}
+
+div.bolla div.fondo table td.annotazioni
+{
+    height:52px;
+}
+
+div.bolla div.fondo table span.label
+{
+    float:left;
+    width:95%;
+    font-size:10px;
+    text-transform:uppercase;
+    padding:5px;
+}
+
+div.bolla div.fondo table span.value
+{
+    float:left;
+    width:90%;
+    font-size:14px;
+    padding-left:15px;
+    padding-bottom:5px;
+}
+
+div.bolla span.note
+{
+    text-align:left;
+}
+
+
+/***** richiesta ritiro *****/
+div.richiestaritiro
+{
+    float:left;
+    width:100%;
+}
+
+div.richiestaritiro *
+{
+    font-size:16px;
+    font-family:Times New Roman;
+    font-weight:bold;
+    font-style:italic;
+}
+
+div.richiestaritiro div.top
+{
+    float:left;
+    width:100%;
+    padding-bottom:40px;
+}
+
+div.richiestaritiro div.sx,
+div.richiestaritiro div.dx
+{
+    float:left;
+    width:40%;
+}
+
+div.richiestaritiro div.trasportatore,
+div.richiestaritiro div.avviso,
+div.richiestaritiro div.mittente,
+div.richiestaritiro div.destinatario,
+div.richiestaritiro div.dataritiro,
+div.richiestaritiro div.dati,
+div.richiestaritiro div.consegna
+{
+    float:left;
+    width:100%;
+}
+
+div.richiestaritiro div.avviso
+{
+    margin-top:20px;
+}
+
+div.richiestaritiro div.mittente
+{
+    margin-top:15px;
+}
+
+div.richiestaritiro div.dataritiro
+{
+    margin-top:80px;
+}
+
+div.richiestaritiro div.consegna
+{
+    margin-top:25px;
+}
+
+div.richiestaritiro div.top p.titolo span
+{
+    font-size:18px;
+}
+
+div.richiestaritiro p
+{
+    float:left;
+    width:100%;
+    margin-bottom:2px;
+}
+
+div.richiestaritiro p span
+{
+    float:left;
+    width:45%;
+}
+
+div.richiestaritiro p span.label
+{
+    width:35%;
+}
+
+div.richiestaritiro p span.mini
+{
+    width:auto;
+}
+
+div.richiestaritiro p span.numero,
+div.richiestaritiro p span.data
+{
+    width:20%;
+    margin-left:10px;
+    margin-right:10px;
+    text-align:center;
+}
+
+div.richiestaritiro div.avviso p
+{
+    padding-left:50px;
+}
+
+div.richiestaritiro div.mittente p
+{
+    padding-left:100px;
+}
+
+div.richiestaritiro div.destinatario p.riferimenti label
+{
+    float:left;
+    width:20%;
+    font-weight:normal;
+    padding-left:75px;
+}
+
+
+/***** moduli di stampa *****/
+
+h1.modulostampa
+{
+    color:#599ed1;
+    margin-top:15px;
+}
+
+p.modulostampa
+{
+    font-size:12px;
+    margin-top:5px;
+}
+
+table.modulostampa
+{
+    margin-top:15px;
+    width:100%;
+}
+table.modulostampa td
+{
+    vertical-align:top;
+}
+
+table.modulostampa th
+{
+    text-align:left;
+    font-size:10px;
+    text-transform:uppercase;
+    padding-left:2px;
+    padding-top:10px;
+}
+
+table.modulostampa td.cella,
+table.modulostampa td.cellacolspan2,
+table.modulostampa td.cellacolspan3,
+table.modulostampa td.cellacolspan4,
+table.modulostampa td.cellacolspan5,
+table.modulostampa td.cellacolspan6,
+table.modulostampa td.cellatotali
+{
+    border-top:1px solid #CCC;
+    border-left:1px solid #CCC;
+    min-height:40px;
+    padding:2px;
+    padding-left:7px;
+    padding-right:7px;
+}
+
+table.modulostampa td.spacer
+{
+    border-left:1px solid #CCC;
+}
+
+table.modulostampa td.borded
+{
+    border:1px solid #CCC;
+    padding:7px;
+}
+
+table.modulostampa td.cellatotali
+{
+    border-top:0px;
+    border-bottom:1px solid #CCC;
+    border-left:1px solid #CCC;
+}
+
+
+table.modulostampa td span.descrittorelabel,
+table.modulostampa td span.label
+{
+    width:98%;
+    float:left;
+    display:block;
+    font-size:10px;
+    text-transform:uppercase;
+    white-space:nowrap;
+}
+
+table.modulostampa td span.value,
+table.modulostampa td span.descrittorevalue
+{
+    width:96%;
+    float:left;
+    display:block;
+    font-size:13px;
+    font-weight:bold;
+    padding-top:5px;
+    font-family:Courier New;
+}
+
+table.modulostampa td.cellatotali span.value
+{
+    text-align:right;
+}
+
+table.modulostampa td span.descrittorelabel
+{
+    width:30%;
+    border-top:1px solid #CCC;
+}
+ 
+table.modulostampa td span.descrittorevalue
+{
+    padding-top:0px;
+    width:70%;
+    border-top:1px solid #CCC;
+}
+
+table.modulostampa td li.first span.descrittorelabel,
+table.modulostampa td li.first span.descrittorevalue
+{
+    border-top:0px;
+}
+
+table.modulostampa td div.box span.value
+{
+    padding-left:10px;
+}
+
+table.modulostampa td div.box
+{
+    border-top:1px solid #CCC;
+    border-left:1px solid #CCC;
+    width:95%;
+    float:right;
+    padding-left:7px;
+    padding-top:2px;
+    padding-bottom:10px;
+}
+
+table.modulostampa table.value
+{
+    width:100%;
+    border-right:1px solid #CCC;
+}
+
+table.modulostampa table.value th
+{
+    padding-left:7px;
+    background-color:#CCCCCC;
+}
+
+table.modulostampa table.value td
+{
+    border-left:1px solid #CCC;
+    border-bottom:1px solid #CCC;
+}

@@ -1,0 +1,342 @@
+<%@ Language=VBScript CODEPAGE=65001%>
+<% Option Explicit %>
+<% response.charset = "UTF-8" %>
+<%
+dim post
+if Request.ServerVariables("REQUEST_METHOD")="POST" then
+	post = true
+else
+	post = false
+end if
+
+if post AND (request("salva")<>"" OR request("salva_elenco")<>"") then
+	Server.Execute("SpedizioniSalva.asp")
+end if
+
+dim conn, rs, rsc, sql, label, id_cliente
+set conn = Server.CreateObject("ADODB.Connection")
+set rs = Server.CreateObject("ADODB.recordset")
+set rsc = Server.CreateObject("ADODB.recordset")
+conn.open Application("DATA_ConnectionString")
+
+sql = "SELECT cat_nome_it FROM sgtb_ddt_categorie WHERE cat_id = " & cIntero(request("CAT_ID"))
+label = GetValueList(conn, NULL, sql)
+
+
+id_cliente = cIntero(request("ID_CLIENTE"))
+
+
+%>
+<!--#INCLUDE FILE="intestazione.asp" -->
+<% 
+
+dim dicitura
+set dicitura = New testata 
+dicitura.iniz_sottosez(0)
+dicitura.sezione = "Gestione DDT - inserimento " & label
+if id_cliente>0 then
+	dicitura.puls_new = ""
+	dicitura.link_new = ""
+else
+	dicitura.puls_new = "INDIETRO"
+	dicitura.link_new = "Spedizioni.asp"
+end if
+dicitura.scrivi_con_sottosez()
+
+%>
+
+<div id="content">
+	<form action="" method="post" id="form1" name="form1">
+	<input type="hidden" name="tfn_ddt_categoria_id" value="<%= request("CAT_ID") %>">
+	<input type="hidden" name="nuovo_inserimento" value="true">
+	<table cellspacing="1" cellpadding="0" class="tabella_madre" style="border-bottom:0px;">
+		<caption>Inserimento <%=lCase(label)%></caption>
+		<tr><th colspan="4">DATI <%=UCase(label)%></th></tr>
+		<tr>
+			<td class="label" style="width:18%;">numero:</td>
+			<td class="content" colspan="3">
+				-----
+			</td>
+		</tr>
+		<tr>
+			<td class="label">data:</td>
+			<td class="content" colspan="3">
+				<% CALL WriteDataPicker_Input("form1", "tfd_ddt_data", IIF(Request.ServerVariables("REQUEST_METHOD")="POST",request("tfd_ddt_data"),Date()), "", "/", false, true, LINGUA_ITALIANO) 
+				%>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">causale:</td>
+			<td class="content" colspan="3">
+				<% sql = "SELECT * FROM sgtb_ddt_causali ORDER BY cau_ordine, cau_titolo_it"
+				CALL dropDown(conn, sql, "cau_id", "cau_titolo_it", "tfn_ddt_causale_id", request("tfn_ddt_causale_id"), true, "", LINGUA_ITALIANO) %>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">trasporto a cura:</td>
+			<td class="content" colspan="3">
+				<% sql = "SELECT * FROM sgtb_ddt_trasporto ORDER BY tra_titolo_it"
+				CALL dropDown(conn, sql, "tra_id", "tra_titolo_it", "tfn_ddt_trasporto_id", request("tfn_ddt_trasporto_id"), true, "", LINGUA_ITALIANO) %>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">porto:</td>
+			<td class="content" colspan="3">
+				<% sql = "SELECT * FROM sgtb_ddt_porto ORDER BY por_titolo_it"
+				CALL dropDown(conn, sql, "por_id", "por_titolo_it", "tfn_ddt_porto_id", request("tfn_ddt_porto_id"), true, "", LINGUA_ITALIANO) %>
+			</td>
+		</tr>
+		<tr>
+			<% if id_cliente > 0 then %>
+				<% sql = " SELECT * FROM tb_Indirizzario INNER JOIN tb_Utenti " & _
+						 " ON tb_Indirizzario.IDElencoIndirizzi = tb_Utenti.ut_NextCom_ID " & _
+						 " WHERE ut_ID = " & id_cliente
+				rsc.open sql, conn, adOpenStatic, adLockOptimistic, adCmdText
+				%>
+				<input type="hidden" name="reload" value="true">
+				<td class="label">cliente:</td>
+				<td class="content" colspan="3"><%= ContactFullName(rsc)%></td>
+				<input type="hidden" name="tfn_ddt_cliente_id" value="<%=id_cliente%>">
+			<% else %>
+				<td class="label">cliente:</td>
+				<td class="content" colspan="3">
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td>
+								<% dim filtro_profili
+								'Commentato 31/10/2014, dopo richiesta di Daniele (Giacomo)
+								'select case cIntero(request("CAT_ID"))
+								'	case DDT_CAT_ID
+								'		filtro_profili = "&filtro_profilo="&TRASPORTATORI&","&COSTRUTTORI&","&CLIENTI_PRIVATI&"&filtro_exclude=true"
+								'	case LETTERE_CAT_ID
+								'		filtro_profili = "&filtro_profilo="&CLIENTI_PRIVATI
+								'end select
+								%>
+								<input type="hidden" name="tfn_ddt_cliente_id" value="<%= request.form("tfn_ddt_cliente_id") %>">
+								<input READONLY type="text" name="cliente" style="padding-left:3px; width:100%" value="<%= request.form("cliente") %>" 
+									   onclick="OpenAutoPositionedScrollWindow('ClientiSelezione.asp?field_nome=cliente&field_id=tfn_ddt_cliente_id&selected=' + tfn_ddt_cliente_id.value + '&field_destinazione_id=tfn_ddt_destinazione_id&field_destinazione_nome=destinazione<%=filtro_profili%>&BUTTONS_ADD=true&AFTER=submit', 'SelezioneCliente', 750, 500, true)" title="Click per aprire la finestra per la selezione del cliente">
+							</td>
+							<td width="25%">
+								<a class="button_input" href="javascript:void(0)" onclick="form1.cliente.onclick();" 
+									 title="Apre la filnestra per la selezione del cliente" <%= ACTIVE_STATUS %>>
+									SELEZIONA CLIENTE
+								</a>
+								&nbsp;(*)
+							</td>
+						</tr>
+					</table>
+				</td>
+			<% end if %>
+		</tr>
+		<tr>
+			<td class="label">destinazione:</td>
+			<td class="content" colspan="3">
+				<table cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td>
+						<% dim destinazione_id, destinazione
+						if id_cliente > 0 then
+							destinazione_id = rsc("IDElencoIndirizzi")
+							destinazione = ContactAddress(rsc)
+						else
+							destinazione_id = request.form("tfn_ddt_destinazione_id")
+							destinazione = request.form("destinazione")
+						end if
+						%>
+						<input type="hidden" name="tfn_ddt_destinazione_id" value="<%=destinazione_id %>">
+						<input READONLY type="text" name="destinazione" style="padding-left:3px; width:100%" value="<%=destinazione %>" 
+							   onclick="OpenAutoPositionedScrollWindow('ClientiSelezione.asp?field_nome=destinazione&field_id=tfn_ddt_destinazione_id&selected=' + tfn_ddt_destinazione_id.value, 'SelezioneDestinazione', 620, 520, true)" title="Click per aprire la finestra per la selezione della destinazione">
+					</td>
+					<td width="30%" nowrap>
+						<a class="button_input" href="javascript:void(0)" onclick="form1.destinazione.onclick();" 
+							 title="Apre la filnestra per la selezione del destinazione" <%= ACTIVE_STATUS %>>
+							SELEZIONA DESTINAZIONE
+						</a>
+						&nbsp;(*)
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<script language="JavaScript" type="text/javascript">
+			function abilita(){
+				var trasp = document.getElementById('trasportatore');
+				var peso = document.getElementById('tft_ddt_peso');
+				var span_peso = document.getElementById('span_peso');
+				var volume = document.getElementById('tft_ddt_volume');
+				var span_volume = document.getElementById('span_volume');
+				var colli = document.getElementById('tft_ddt_numero_colli');
+				var span_colli = document.getElementById('span_colli');
+				if (trasp.value != ''){
+					peso.disabled = '';
+					peso.className = 'text';
+					span_peso.innerHTML='(*)'
+					volume.disabled = '';
+					volume.className = 'text';
+					span_volume.innerHTML='(*)'
+					colli.disabled = '';
+					colli.className = 'text';
+					span_colli.innerHTML='(*)'
+				}
+				else{
+					peso.disabled = 'disabled';
+					peso.className = 'text disabled';
+					span_peso.innerHTML=''
+					volume.disabled = 'disabled';
+					volume.className = 'text disabled';
+					span_volume.innerHTML=''
+					colli.disabled = 'disabled';
+					colli.className = 'text disabled';
+					span_colli.innerHTML=''
+				}
+			}
+			
+			function resetTrasp(){
+				document.form1.tfn_ddt_trasportatore_id.value = '';
+				document.form1.trasportatore.value = '';
+				abilita();
+			}
+			
+		</script>
+		<tr>
+			<td class="label">trasportatore:</td>
+			<td class="content" colspan="3">
+				<table cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td>
+						<input type="hidden" name="tfn_ddt_trasportatore_id" value="<%= request.form("tfn_ddt_trasportatore_id") %>" onchange="abilita()">
+						<input READONLY type="text" name="trasportatore" style="padding-left:3px; width:100%" value="<%= request.form("trasportatore") %>" 
+							   onclick="OpenAutoPositionedScrollWindow('ClientiSelezione.asp?field_nome=trasportatore&field_id=tfn_ddt_trasportatore_id&selected=' + tfn_ddt_trasportatore_id.value + '&filtro_profilo=<%=TRASPORTATORI%>&AFTER=onchange', 'SelezioneTrasportatore', 620, 480, true)" title="Click per aprire la finestra per la selezione del trasportatore">
+					</td>
+					<td width="41%" nowrap>
+						<a class="button_input" href="javascript:void(0)" onclick="form1.trasportatore.onclick();" 
+							 title="Apre la filnestra per la selezione del trasportatore" <%= ACTIVE_STATUS %>>
+							SELEZIONA TRASPORTATORE
+						</a>
+						<a class="button_input" href="javascript:void(0);" id="trasp_reset" onclick="resetTrasp();" title="Reset" <%= ACTIVE_STATUS %>>
+							RESET
+						</a>
+						&nbsp;(*)
+					</td>
+				</tr>
+				</table>
+			</td>	
+		</tr>
+		<tr>
+			<td class="label">peso:</td>
+			<td class="content" colspan="3">
+				<input type="text" class="text" name="tft_ddt_peso" value="<%=request("tft_ddt_peso")%>" maxlength="255" size="22">
+				<span id="span_peso">(*)</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">volume:</td>
+			<td class="content" colspan="3">
+				<input type="text" class="text " name="tft_ddt_volume" value="<%=request("tft_ddt_volume")%>" maxlength="255" size="22">
+				<span id="span_volume">(*)</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">numero colli:</td>
+			<td class="content" colspan="3">
+				<input type="text" class="text" name="tft_ddt_numero_colli" value="<%=request("tft_ddt_numero_colli")%>" maxlength="255" size="22">
+				<span id="span_colli">(*)</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">contrassegno:</td>
+			<td class="content" colspan="3">
+				<input type="text" class="text" name="tft_ddt_contrassegno" value="<%=request("tft_ddt_contrassegno")%>" maxlength="100" size="22">
+			</td>
+		</tr>
+		<script language="JavaScript" type="text/javascript">
+			abilita();
+		</script>
+		<% if (cIntero(request.form("tfn_ddt_cliente_id"))>0 AND post) OR id_cliente > 0 then %>
+			<% sql = " SELECT * FROM sgtb_schede INNER JOIN gv_articoli ON sgtb_schede.sc_modello_id = gv_articoli.rel_id " & _
+					 " INNER JOIN sgtb_stati_schede ON sgtb_schede.sc_stato_id = sgtb_stati_schede.sts_id " & _
+					 " WHERE ISNULL(sts_elenco_ddt_da_consegnare,0)=1 AND ISNULL(sc_rif_DDT_di_resa_id, 0)=0 AND sc_cliente_id = "
+			if id_cliente > 0 AND not post then
+				sql = sql & id_cliente
+			else
+				sql = sql & cIntero(request.form("tfn_ddt_cliente_id"))
+			end if
+			sql = sql & " ORDER BY sc_data_ricevimento DESC, sc_numero "
+			dim id_scheda
+			id_scheda = cIntero(request("ID_SCHEDA"))
+
+			rs.open sql, conn, adOpenStatic, adLockOptimistic, adCmdText %>
+			<table cellspacing="1" cellpadding="0" class="tabella_madre" style="border-bottom:0px;">
+				<tr><th colspan="5">SCHEDE ASSOCIATE AL DDT</th></tr>
+				<% if rs.eof then %>
+					<tr><td colspan="4" class="note">Nessuna scheda da spedire per il cliente selezionato</td></tr>
+				<% else %>
+					<tr>
+						<th class="l2_center" style="width:6%">associa</th>
+						<th class="l2_center" style="width:18%">numero scheda e data</th>
+						<th class="l2_center" style="width:18%">stato</th>
+						<th class="l2_center" style="width:14%">costo restituzione</th>
+						<th class="L2">modello</th>
+					</tr>
+				<% end if %>
+				<% while not rs.eof %>
+					<tr>
+						<td class="content_center">
+							<input type="checkbox" class="noBorder<%=IIF(rs("sc_id")=id_scheda," checked","")%>" name="id_schede" value="<%=rs("sc_id")%>" 
+									<%= chk(cBoolean(inStr(", "&request("id_schede")&",",", "&rs("sc_id")&",")>0 OR rs("sc_id")=id_scheda,false))%>>
+						</td>
+						<td class="content_center"><% CALL SchedaLink(rs("sc_id"), rs("sc_numero") & " del " & rs("sc_data_ricevimento"))%></td>
+						<td class="content"><%=rs("sts_nome_it")%></td>
+						<td class="content_center">
+							<input type="text" class="number" name="costo_scheda_<%=rs("sc_id")%>" value="<%= FormatPrice(cReal(request("costo_scheda_"&rs("sc_id"))), 2, false) %>" size="7"> &euro;
+						</td>
+						<td class="content">
+							<% CALL ArticoloLink(rs("art_id"), rs("art_nome_it"), rs("art_cod_int")) %>
+							<% if rs("art_varianti") then %>
+								<%= ListValoriVarianti(conn, rsd, rs("rel_id")) %>
+							<% else %>
+								&nbsp;
+							<% end if %>
+						</td>
+					</tr>
+				<% rs.moveNext %>
+			<% wend %>
+			</table>
+		<% end if %>
+
+		<table cellspacing="1" cellpadding="0" class="tabella_madre">
+			<tr><th colspan="4">NOTE</th></tr>
+			<tr>
+				<td class="content" colspan="4">
+					<textarea style="width:100%;" rows="3" name="tft_ddt_note"><%= request("tft_ddt_note") %></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="footer" colspan="4">
+					(*) Campi obbligatori.
+					<input type="submit" class="button" name="salva" value="SALVA">
+					<% if not id_cliente > 0 then %>
+						<input type="submit" class="button" name="salva_elenco" value="SALVA & TORNA A ELENCO">
+					<% end if %>
+				</td>
+			</tr>
+		</table>
+		&nbsp;
+	</form>
+</div>
+</body>
+</html>
+
+<% if id_cliente>0 then 
+	rsc.close() %>
+	<script language="JavaScript" type="text/javascript">
+		FitWindowSize(this);
+	</script>
+<% end if %>
+
+<%
+set rs = nothing
+set rsc = nothing
+conn.Close
+set conn = nothing
+%>

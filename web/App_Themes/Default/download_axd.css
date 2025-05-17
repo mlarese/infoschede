@@ -1,0 +1,20 @@
+body.download_axd h1
+{
+    color:#494949;
+    font-size:20px;
+    font-family:Arial;
+}
+
+body.download_axd p
+{
+    color:#494949;
+    font-size:12px;
+    font-family:Arial;
+}
+
+body.download_axd a
+{
+    font-weight:bold;
+    color:#494949;
+	 font-family:Arial;
+}

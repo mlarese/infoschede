@@ -1,0 +1,1832 @@
+
+body, div, h1, a, table, select, input, button, textarea {
+	/* font-family: Calibri, Arial, Helvetica, Sans-Serif; */
+	/* font-family: Tahoma, Arial, Helvetica, Sans-Serif; */
+	font-family: Arial,"Trebuchet MS", Helvetica, Sans-Serif;
+	font-size: 100%;			/* azzera la differenza di dimensione dei tag H */
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a.print_link 
+{
+    float:right;
+    font-size:12px;
+    color:#333333;
+    font-weight:bold;
+    margin-right:25px;
+    margin-bottom:10px;
+    text-decoration:none;
+    border:1px solid #333333;
+    padding:4px;
+}
+
+@media print {
+  a.print_link 
+  {
+      display:none;
+      visibility:hidden;
+  }
+}
+
+select, input, button, textarea {
+	border:1px solid #5ea4bd;
+	color: #494949;
+	font-size: 12px;
+	background-color: #FFFFFF;
+}
+
+body {
+    /*text-align: center;		centra in IE 5.x */
+    background-position:top;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+body.page
+{
+    text-align: center;
+}
+
+body.email
+{
+    text-align:left;
+}
+
+form {
+    position: relative;
+    margin: 0px auto;		/*centra negli altri browsers*/
+    text-align: left;		/*ripristina l' allineamento*/
+}
+
+/* disabilito i puntini per gli elenchi dei plugin */
+div.layers_object ul,
+div.layers_object ol {
+	list-style-type: none;
+	/* toglie i puntini sugli altri browser */
+	margin: 0px;
+	padding: 0px;
+}
+
+body.email div.layers_object
+{
+	background-color:White;	
+}
+
+div.shinystat{
+	visibility:hidden;
+}
+
+
+
+/*------------------------------- page body ---------------------------*/
+
+div.pagebody,
+div.pagebody div.background_interno,
+div.pagebody div.background_interno div.colonnasx,
+div.pagebody div.background_interno div.main_panel,
+div.pagebody div.background_footer
+{
+    float:left;
+}
+
+div.pagebody
+{
+    width:100%;
+}
+
+div.pagebody div.background_interno
+{
+    width:980px !important;
+    background-position:top center;
+}
+
+div.pagebodyhome div.background_interno div.colonnasx
+{
+    width:485px;
+    border-right: 2px solid #599ed1;
+    float: left;
+    height: auto;
+}
+
+div.pagebodyhome div.background_interno div.main_panel
+{
+    width:450px;
+    float: left;
+    height: auto;
+}
+
+div.pagebodyinterno div.background_interno div.colonnasx
+{
+    width:165px;    
+    float: left;
+    height: 100%;
+}
+
+div.pagebodyinterno div.background_interno div.main_panel
+{
+    width:800px;
+    float: left;
+    min-height: 700px !important;
+    border-left: 2px solid #599ed1;
+    padding-top: 20px;
+}
+
+div.pagebody div.background_footer
+{
+    width:955px !important;
+    padding-left:25px;
+    padding-top:15px;   
+    margin-top:15px;   
+    padding-bottom:15px;   
+    border-top: 2px solid #599ed1;
+}
+
+div.pagebody div.background_footer span
+{
+    color:#599ed1;    
+    font-size:11px;
+}
+
+div.pagebody div.background_footer span.poweredby
+{
+    float:left;
+}
+
+div.pagebody div.background_footer span.poweredby a
+{
+    color:#494949;
+}
+
+div.pagebody div.background_footer span.credits
+{
+    float:right;
+    padding-right:24px;
+}
+
+
+/*----------------- google map ----------------*/
+
+div.googlemap
+{
+    padding-left:35px;
+    padding-top:40px;
+}
+
+div.googlemap iframe
+{
+    width:625px !important;
+    height:450px !important;
+} 
+
+
+
+
+
+/*---------------------------- contattaci e registrati -------------------------*/
+div.contattaci,
+div.form_contattaci
+{
+    float:left;
+    width:100%;
+}
+
+div.contattaci
+{
+    padding-left:24px;
+    padding-top:0px;
+    width:90%;
+}
+
+div.form_contattaci div.form_mandatory ul li
+{
+    color:Red;
+}
+
+div.contattaci td,
+div.contattaci label,
+div.contattaci div
+{
+    color:#494949;
+}
+
+div.contattaci label,
+div.contattaci span,
+div.contattaci a,
+div.contattaci div
+{
+    font-size:12px;
+}
+
+div.contattaci label,
+div.contattaci td,
+div.contattaci div.form_intestazione
+{
+    padding-bottom: 5px;
+	vertical-align:top;
+}
+
+div.contattaci td.form_label,
+div.contattaci td.form_label1
+{
+	width:20%;
+}
+
+div.contattaci td.form_label2
+{
+    text-align:right;
+    padding-right:20px;
+    width:20%;
+}
+
+div.contattaci td.form_input input,
+div.contattaci td.form_input1 input,
+div.contattaci td.form_input2 input
+{
+    width:80%;
+}
+
+div.contattaci td.form_input2 input
+{
+    width:46%; 
+}
+
+div.contattaci textarea
+{ 
+    min-height:70px;
+    width:80%;
+}
+
+div.contattaci div.form_intestazione,
+div.contattaci td.captcha label
+{
+    font-weight:bold;
+}
+
+div.contattaci td.captcha,
+div.contattaci label.note
+{
+    vertical-align:middle;        
+}
+
+div.contattaci td.captcha label.note
+{
+    font-weight:normal;        
+}
+
+div.form_contattaci div.form_intestazione_errore
+{
+    font-size:12px !important;
+    font-weight:normal;
+    color:Red !important;
+}
+
+div.contattaci td.form_button
+{
+    padding-bottom:10px;
+    padding-right:10px;
+    text-align: right;
+}
+
+div.ie7_contattaci td.form_button
+{
+    float:right;
+}
+
+div.contattaci td.form_button input,
+div.elencodocumenti li div.button a
+{
+    margin-top:10px;
+    margin-left:15px;
+    border:0px;
+    padding:0px;
+    background:url("../../upload/1/images/interfaccia/pulsante_little.png") no-repeat;
+    width: 100px;
+	height: 25px;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    float:left;
+    text-transform:lowercase;
+    font-size:12px;
+    text-decoration:none;
+    float:right;
+}
+
+div.contattaci a {    
+    text-decoration:none;
+}
+
+div.form_mandatory
+{
+    margin-bottom:10px;    
+}
+
+div.contattaci table td
+{
+    padding: 2px;    
+}
+
+div.contattaci table td.form_privacy
+{
+    padding-top:15px;
+    font-size:11px;
+}
+
+div.contattaci td.form_value a,
+div.contattaci td.form_value span,
+div.contattaci td.form_value1 span,
+div.contattaci td.form_value2 span,
+div.contattaci td.form_message span
+{
+    display: block;
+    float:left;
+    width: 90%;
+    border:1px dotted #5EA4BD;
+    padding-left:2px;
+    overflow:hidden;
+    min-height:14px;
+}
+
+div.contattaci td.form_value2 span
+{
+   width:72%;
+}
+
+div.contattaci td.form_message span
+{
+    min-height: 90px;    
+}
+
+td.form_input1, 
+td.form_value1,
+td.form_input2
+{
+	width:30%;
+}
+
+
+div.contattaci td a
+{
+	font-weight:bold;
+	text-decoration: none;
+	color:#5EA4BD;
+}
+
+div.contattaci table.form
+{
+    padding-top:10px;
+    border-top:2px solid #CCE7EE;
+}
+
+div.contattaci table.form td.form_titolo
+{
+	padding-top:10px;
+}
+
+div.contattaci table.form td.form_captcha div.note
+{
+    padding-bottom:2px;
+}
+
+div.contattaci table.form td.form_captcha div.aggiorna
+{
+    padding-top:2px;
+    padding-bottom:10px;
+}
+
+div.form_contattaci td.form_mandatory
+{
+    padding-top:10px;
+    border-top:2px solid #cce7ee;
+}
+
+
+div.registrazioneprivato
+{
+    float:left;
+    width:100%;
+    margin-left:24px;
+}
+
+div.registrazioneprivato div.contattaci
+{
+    padding-left:0px;
+}
+
+div.registrazioneprivato div.contattaci table.form
+{
+    padding-top:0px;
+    border-top:0px;
+}
+
+div.registrazioneprivato td.sezione
+{
+    padding-top:10px;
+    border-top:2px solid #cce7ee;
+    font-weight:bold;
+}
+
+div.registrazioneprivato tr.pre_title td,
+div.registrazioneprivato td.ultima
+{
+    padding-bottom:15px;
+}
+
+
+
+/* RAGGRUPPAMENTO STILI PRESI DA FILE */
+/* Calendario */
+div.ricerca img.ui-datepicker-trigger
+{
+    margin-left:3px;
+    vertical-align:middle;
+}
+
+.ui-datepicker
+{
+	background-color:#F3F3F3 !important;
+	font-family:Arial;
+	font-size:11px;
+	border:1px solid #CCCCCC;
+	left:-100000px;
+	z-index:80;
+	width:180px;
+	/*position:absolute;*/
+}
+
+.ui-datepicker *
+{
+    font-family:Arial;
+}
+
+div.ui-datepicker-header
+{
+    background-color:#599ED1;
+	height:16px;
+	padding-top:4px;
+	border:none;
+	text-align:center;
+	border:2px solid #F3F3F3;
+	border-bottom:0px;
+}
+
+div.ui-datepicker-header a
+{
+    text-decoration:underline;
+    padding-left:10px;
+    padding-right:10px;
+    font-weight:bold;
+}
+
+span.ui-datepicker-month
+{
+    padding-bottom:2px;
+    padding-left:15px;
+	color:#FFFFFF;
+    font-weight:bold;
+}
+
+span.ui-datepicker-year
+{
+    padding-right:15px;
+	color:#FFFFFF;
+    font-weight:bold;
+}
+
+div.ui-datepicker-header a.ui-datepicker-prev
+{
+	float:left;
+	color:#FFFFFF;
+    font-weight:bold;
+}
+
+div.ui-datepicker-header a.ui-datepicker-next
+{
+	float:right;
+	color:#FFFFFF;
+    font-weight:bold;
+}
+
+table.ui-datepicker-calendar
+{
+    width:180px;
+    background-color:white;
+}
+
+div.ui-datepicker thead
+{
+    background-color:#F3F3F3;
+}
+
+div.ui-datepicker thead th
+{
+	width:26px;
+	height:20px;
+	color:#FFFFFF;
+	text-align:center;
+	background-color:#599ED1;
+}
+
+div.ui-datepicker table.ui-datepicker-calendar td
+{
+	background-color:#FFFFFF;
+    border:1px solid #CCCCCC;
+	height:22px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+div.ui-datepicker table.ui-datepicker-calendar td.ui-datepicker-unselectable span
+{
+    text-decoration:none;
+	text-decoration:line-through;
+	color:#AAAAAA;
+}
+
+div.ui-datepicker table.ui-datepicker-calendar td.ui-datepicker-today span
+{
+    background-color:#F3F3F3;
+}
+
+div.ui-datepicker table.ui-datepicker-calendar td.ui-datepicker-current-day
+{
+    background-color:#104E7D;
+    color:#FFFFFF;
+}
+
+div.ui-datepicker table.ui-datepicker-calendar td.ui-datepicker-current-day a
+{
+    color:White;
+}
+
+div.ui-datepicker table.ui-datepicker-calendar td a,
+div.ui-datepicker table.ui-datepicker-calendar td span
+{
+	font-family:Trebuchet MS;
+	font-size:11px;
+	text-decoration:none;
+	color:#3D3D3D;
+}
+
+div.ui-datepicker table.ui-datepicker-calendar td a:hover
+{
+    text-decoration:underline;
+}
+
+div.ui-datepicker table.ui-datepicker-calendar td.ui-datepicker-other-month,
+div.ui-datepicker table.ui-datepicker-calendar td.hide
+{
+    background:#F3F3F3;
+    color:#AAAAAA;
+}
+
+button.ui-datepicker-trigger
+{
+    border:none;
+    cursor:pointer !important;
+}
+
+div.ui-datepicker-header a.ui-corner-all span,
+input.datepicker
+{
+    cursor:pointer !important;
+}
+
+
+/************************menu top*****************************************/
+
+div.menuprincipale
+{
+	float: left;		
+}
+
+div.menuprincipale ul
+{
+	float: left;	
+}
+
+div.menuprincipale li
+{
+	float: left;	
+	margin-right: 30px;
+	font-size: 14px;
+}
+
+div.menuprincipale li a
+{	
+	color: #104e7d;	
+	font-weight: normal;
+}
+
+div.menuprincipale li.selected a,
+div.menuprincipale li.selectedlast a,
+div.menuprincipale li.selectedfirst a
+{	
+	font-weight: bold;
+}
+
+div.menuprincipale ul.menuinterno
+{
+	border-left: 2px solid #599ed1;	
+	padding-left: 25px;
+}
+
+/************************* menu area riservata ***************************************/
+
+div.menuareariservata,
+div.menusupervisori,
+div.menucostruttori
+{
+	float: left;
+	margin-top: 25px;
+	border-bottom: 2px solid #599ed1;
+	padding-bottom: 25px;
+	width: 100%;
+}
+
+div.menuareariservata li,
+div.menusupervisori li,
+div.menucostruttori li
+{
+	float: left;		
+	font-size: 14px;
+	margin-bottom: 10px;
+	width: 140px;
+}
+
+div.menuareariservata li a,
+div.menusupervisori li a,
+div.menucostruttori li a
+{	
+	color: #104e7d;	
+	font-weight: normal;
+}
+
+div.menuareariservata li.selected a,
+div.menuareariservata li.selectedlast a,
+div.menuareariservata li.selectedfirst a,
+div.menusupervisori li.selected a,
+div.menusupervisori li.selectedlast a,
+div.menusupervisori li.selectedfirst a,
+div.menucostruttori li.selected a,
+div.menucostruttori li.selectedlast a,
+div.menucostruttori li.selectedfirst a
+{	
+	font-weight: bold;
+}
+
+/*-------------------------------------- login --------------------------------*/
+div.login
+{
+	margin-top: 100px;
+	margin-left: 140px;
+	width: 202px;
+}
+
+div.login span.label
+{
+	color: #104e7d;
+	font-size: 12px;
+	width: 150px !important;	
+	float: left;
+	margin-bottom: 5px;
+}
+
+div.login div.User input,
+div.login div.Password input
+{	
+	margin-bottom: 5px;
+	width: 200px;
+}
+
+div.login div.Submit input
+{	
+	width: 100px;
+	height: 25px;
+	float: right;
+	margin-top: 10px;
+	border: 0px;
+	background:url("../../upload/1/images/interfaccia/pulsante_little.png") no-repeat;
+	color: White;
+	font-weight: bold;
+}
+
+
+/*-------------------------------- stili comuni --------------------------*/
+h1.titolo_sez,
+div.contattaci div.form_intestazione
+{
+	font-size:20px;
+	color:#599ed1;
+}
+
+div.descrizione
+{
+    float:left;
+    width:100%;
+    font-size:12px;
+    margin-top:10px;
+    color:#494949;
+}
+
+div.errori
+{
+    float:left;
+    width:100%;
+    font-size:12px;
+    font-weight:bold;
+    color:Red;
+}
+
+div.alberocategorie div.button,
+div.elencoprodotti div.button,
+div.elencoproblemi div.button,
+div.scheda div.dati div.button
+{
+    float:left;
+    width:100%;
+    margin-top:15px;
+    margin-bottom:10px;
+    padding-top:10px;
+    text-align:right;
+    border-top:1px solid #CCCCCC;
+}
+
+div.alberocategorie div.button input,
+div.elencoprodotti div.button input,
+div.elencoproblemi div.button input,
+div.scheda div.dati div.button input
+{
+    float:right;
+    width:100px;
+	height:25px;
+	font-size:12px;
+	font-weight:bold;
+    margin-top:10px;
+    margin-left:15px;
+    margin-right:20px;
+    padding:0px;
+    text-align:center;
+    text-transform:lowercase;
+    text-decoration:none;
+    background:url(../../upload/1/images/interfaccia/pulsante_little.png) no-repeat;
+    color:white;
+    border:0px;
+    cursor:pointer;
+}
+
+
+/*------------------------------- lista marchi -------------------------*/
+div.indicemarchi
+{
+	margin-left:24px;
+	float:left;
+	width:96%;
+	padding-bottom:10px;
+}
+
+div.indicemarchi ul.lista_lettere li div.iniziale
+{
+	border-bottom:2px solid #cce7ee;
+	font-size: 16px;
+	font-weight: bold;
+	color: #599ed1;
+	padding-top: 15px;
+	float:left;
+	width:100%;
+}
+
+div.indicemarchi ul.lista_lettere ul
+{
+	padding-top:10px;
+	padding-bottom:10px;
+	float:left;
+	width:100%;
+}
+
+div.indicemarchi ul.lista_lettere ul li
+{
+    width:25%;
+    float:left;
+}
+
+div.indicemarchi ul.lista_lettere ul li h1
+{
+	font-weight:normal;
+	color:#104e7d;
+}
+
+div.indicemarchi ul.lista_lettere ul li a
+{
+    float:left;
+}
+
+div.indicemarchi ul.lista_lettere ul li div.img a 
+{
+    float:left;
+    width:100%;
+    color:#104e7d;
+}
+
+div.indicemarchi ul.lista_lettere ul li div.img a img
+{
+    float:left;
+    height:25px;
+    padding:5px;
+    border:1px solid #CCCCCC;
+    overflow:hidden;
+}
+
+
+/*------------------------------- lista categoria -----------------------*/
+div.alberocategorie
+{
+	margin-left: 24px;
+}
+
+div.alberocategorie ul
+{
+	margin-top: 10px;
+}
+
+div.alberocategorie li
+{
+	padding-bottom: 10px;
+}
+
+div.alberocategorie li a
+{
+	color: #104e7d;
+	font-size: 14px;
+}
+
+div.alberocategorie li a.disabled
+{
+    color: #494949;
+}
+div.alberocategorie li a.disabled:hover
+{
+    text-decoration:none;
+}
+
+div.alberocategorie li.liv2
+{
+	padding-left: 20px;	
+}
+
+div.alberocategorie li.liv3
+{
+	padding-left: 40px;	
+}
+
+div.alberocategorie li.liv4
+{
+	padding-left: 60px;	
+}
+
+div.alberocategorie li.liv5
+{
+	padding-left: 80px;	
+}
+
+
+/***************************** lista prodotti *****************************/
+div.elencoprodotti
+{
+	margin-left: 24px;
+}
+
+div.elencoprodotti ul
+{
+	margin-top: 10px;
+}
+
+div.elencoprodotti li
+{
+	margin-bottom: 10px;
+}
+
+div.elencoprodotti li.last
+{
+    border-top:1px solid #CCCCCC;
+    margin-top:20px;
+    padding-top:10px;
+}
+
+div.elencoprodotti li.last div
+{
+    font-size:12px;
+    margin-top:10px;
+    margin-bottom:10px;
+    color:#494949;
+}
+
+div.elencoprodotti li a
+{
+	color: #104e7d;
+	font-size: 14px;
+}
+
+/***************************** lista guasti *******************************/
+div.elencoproblemi
+{
+	margin-left:24px;
+}
+
+div.elencoproblemi ul
+{
+	margin-top:20px;
+}
+
+div.elencoproblemi li 
+{
+	margin-bottom:25px;	
+	width:100%;
+	float:left;
+}
+
+div.elencoproblemi li a
+{
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:40px;
+	cursor:pointer;	
+	color:#104E7D;
+	font-size:14px;
+	font-weight:normal;	
+	display:block;
+}
+
+div.elencoproblemi li.last
+{
+    border-top:1px solid #CCCCCC;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:10px;
+}
+
+div.elencoproblemi li.last div
+{
+    font-size:12px;
+    margin-top:10px;
+    margin-bottom:10px;
+    color:#494949;
+}
+
+div.elencoproblemi li a:hover
+{
+	text-decoration:underline !important;
+}
+
+div.elencoproblemi li a.info
+{
+	background:url(../../upload/1/images/interfaccia/icona_informazioni.jpg) no-repeat;
+}
+
+div.elencoproblemi li a.form
+{	
+	background:url(../../upload/1/images/interfaccia/icona_form.gif) no-repeat 1px;
+}
+
+div.elencoproblemi li div.faq_pnl div.container
+{
+    visibility:hidden;
+    display:none;
+}
+
+div.elencoproblemi li div.faqexpanded div.container p.soluzioni
+{
+    float:left;
+    width:100%;
+    padding-bottom:10px;
+    border-bottom:1px solid #CCCCCC;
+}
+
+div.elencoproblemi li div.faqexpanded div.container p.domanda
+{
+    float:left;
+    width:50%;
+    margin-top:15px;
+}
+
+div.elencoproblemi li div.faqexpanded div.container
+{
+    visibility:visible;
+    display:block;
+    margin-top:25px;
+    padding:10px;
+    background-color:#F4F8FC;
+    font-size:12px;
+    color:#494949;
+    border:#599ED1 2px solid;
+    float:left;
+    width:750px;
+}
+
+div.elencoproblemi li div.faqexpanded div.container input
+{
+    float:right;
+    width:160px;
+	height:25px;
+	font-weight:bold;
+	margin-top:10px;
+    margin-left:20px;
+    color:White;
+    cursor:pointer;
+    border:0px;
+    background:url(../../upload/1/images/interfaccia/pulsante_large.png) no-repeat;
+}
+
+
+/***************************** scheda - richiesta *******************************/
+div.scheda
+{
+    float:left;
+    width:97%;
+    margin-left:24px;
+}
+
+div.scheda div.errori
+{
+    margin-top:15px;
+}
+
+div.scheda div.dati
+{
+    float:left;
+    width:100%;
+    margin-bottom:20px;
+}
+
+div.scheda div.dati div
+{
+    float:left;
+    width:100%;
+    min-height:20px;
+    margin-top:4px;
+    margin-bottom:4px;
+}
+
+div.scheda div.dati div.sezione
+{
+    margin-top:20px;
+    margin-bottom:5px;
+}
+
+div.scheda div.dati div.sezione h2
+{
+    font-size:14px;
+    padding-bottom:2px;
+    border-bottom:1px solid #CCCCCC;
+    color:#494949;
+}
+
+div.scheda div.dati span.value
+{
+    float:left;
+    width:77%;
+    font-size:12px;
+    font-weight:bold;
+    line-height:20px;
+    color:#104E7D;
+}
+
+div.scheda div.dati span.label
+{
+    float:left;
+    width:22%;
+    font-size:12px;
+    line-height:20px;
+    color:#494949;
+}
+
+div.scheda div.dati input.input
+{
+    float:left;
+    width:40%;
+    font-size:12px;
+    line-height:12px;
+}
+
+div.scheda div.dati input.lungo,
+div.scheda div.dati textarea
+{
+    float:left;
+    width:77%;
+    font-size:12px;
+    line-height:12px;
+}
+
+div.scheda div.dati input.datepicker
+{
+    float:left;
+    width:10%;
+    font-size:12px;
+    line-height:12px;
+}
+
+div.scheda div.dati div.modelli
+{
+    width:70%;
+}
+
+div.scheda div.dati div.modello span.label,
+div.scheda div.dati div.matricola span.label,
+div.scheda div.dati div.lista_accessori span.label,
+div.scheda div.dati div.altri_accessori span.label
+{
+    width:171px !important;
+}
+
+div.scheda div.dati div.modello span.value,
+div.scheda div.dati div.matricola span.value,
+div.scheda div.dati div.lista_accessori span.value,
+div.scheda div.dati div.altri_accessori span.value,
+div.scheda div.dati div.altri_accessori input.lungo
+{
+    width:auto;
+}
+
+div.scheda div.dati div.marca
+{
+    width:30%;
+    text-align:right;
+}
+
+div.scheda div.dati div.marca img
+{
+    max-width:233px;
+}
+
+div.scheda div.dati div.garanzia input
+{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+div.scheda div.dati div.altri_accessori
+{
+    display:none;
+    visibility:hidden;
+}
+
+div.scheda div.dati img.info
+{
+    float:left;
+    width:auto;
+    margin-left:5px;
+    cursor:pointer;
+}
+
+div.scheda div.dati img.esempio
+{
+    position:absolute;
+    display:none;
+    visibility:hidden;
+}
+
+div.scheda div.dati img.nscontrino
+{
+    left:700px;
+    top:250px;
+}
+
+div.scheda div.dati img.nmatricola
+{
+    left:620px;
+    top:120px;
+}
+
+div.scheda div.dati div.expanded,
+div.scheda div.dati img.expanded
+{
+    display:block !important;
+    visibility:visible !important;
+}
+
+div.scheda div.dati div.ricambi table
+{
+    float:left;
+    width:60%;
+    border-bottom:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+}
+
+div.scheda div.dati div.ricambi table th,
+div.scheda div.dati div.ricambi table td
+{
+    border-top:1px solid #CCCCCC;
+    border-left:1px solid #CCCCCC;
+}
+
+div.scheda div.dati div.ricambi table span
+{
+    width:100%;
+}
+
+div.scheda div.dati div.ricambi table span.label
+{
+    text-align:center;
+    color:#494949;
+}
+
+div.scheda div.dati div.descrittori ul,
+div.scheda div.dati div.descrittori ul li
+{
+    float:left;
+    width:100%;
+}
+
+
+/***************************** elenco richieste *******************************/
+div.elencorichieste
+{
+    float:left;
+    width:97%;
+    margin-left:24px;
+}
+
+div.elencorichieste div.descrizione p
+{
+    margin-bottom:15px;
+}
+
+div.elencorichieste div.elenco
+{
+    float:left;
+    width:100%;
+    margin-bottom:20px;
+}
+
+div.elencorichieste div.elenco table
+{
+    float:left;
+    width:100%;
+    border-bottom:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+}
+
+div.elencorichieste div.elenco table th
+{
+    text-align:center;
+    border-top:1px solid #CCCCCC;
+    border-left:1px solid #CCCCCC;
+}
+
+div.elencorichieste div.elenco table th.up
+{
+    padding-right:16px;
+    background:url(../../upload/1/images/interfaccia/freccia_su.jpg) no-repeat scroll right center transparent;
+}
+
+div.elencorichieste div.elenco table th.down
+{
+    padding-right:16px;
+    background:url(../../upload/1/images/interfaccia/freccia_giu.jpg) no-repeat scroll right center transparent;
+}
+
+div.elencorichieste div.elenco table td
+{
+    border-top:1px solid #CCCCCC;
+    border-left:1px solid #CCCCCC;
+}
+
+div.elencorichieste div.elenco table th span.label,
+div.elencorichieste div.elenco table th a.label
+{
+    float:left;
+    width:88%;
+    font-size:12px;
+    font-weight:bold;
+    color:#494949;
+}
+
+div.elencorichieste div.elenco table td span.value
+{
+    float:left;
+    width:100%;
+    font-size:12px;
+    font-weight:bold;
+    color:#104E7D;
+}
+
+div.elencorichieste div.elenco table td.link
+{
+    width:40px;
+}
+
+div.elencorichieste div.elenco table td a.value
+{
+    float:left;
+    width:40px;
+    height:23px;
+    font-size:12px;
+    font-weight:bold;
+    padding-top:7px;
+    text-align:center;
+    text-decoration:none;
+    background:url(../../upload/1/images/interfaccia/pulsante_very_little.png) no-repeat scroll 0px 2px transparent;
+    color:White;
+}
+
+div.elencorichieste div.pager
+{
+    float: right; 
+    margin-top: 10px;    
+    margin-right: 10px;
+}
+
+div.elencorichieste div.pager a
+{     
+    font-size:12px;
+    font-weight:bold;
+    color:#494949;
+}
+
+div.elencorichieste div.pager span
+{     
+    font-size:12px;
+    font-weight:bold;
+    color:#599ed1;
+}
+
+
+/***************************** ricerca richieste e prodotti *******************************/
+div.ricercarichieste
+{
+    float:left;
+    width:100%;
+    margin-top:15px;
+    padding-top:10px;
+}
+
+div.ricercarichieste h1
+{
+    float:left;
+    width:100%;
+    font-size:14px;
+    color:#104E7D;
+}
+
+div.ricercarichieste div.errori
+{
+    width:95%;
+}
+
+div.ricercarichieste div.ricerca
+{
+    float:left;
+    width:100%;
+    margin-top:5px;
+}
+
+div.ricercarichieste div.ricerca div
+{
+    float:left;
+    width:100%;
+}
+
+div.ricercarichieste div.ricerca div span.label
+{
+    float:left;
+    width:100%;
+    font-size:11px;
+    margin-top:8px;
+    margin-bottom:3px;
+    color:#494949;
+}
+
+div.ricercarichieste div.ricerca div input
+{
+    float:left;
+    width:40%;
+    font-size:11px;
+}
+
+div.ricercarichieste div.ricerca div input.lungo
+{
+    width:85%;
+}
+
+div.ricercarichieste div.button
+{
+    float:left;
+    width:42%;
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+div.ricercarichieste img
+{
+    margin-left: 10px;    
+}
+
+div.ricercarichieste div.indietro
+{
+    margin-left:12px;
+}
+
+div.ricercarichieste div.button input
+{
+    float:right;
+    width:70px;
+	height:20px;
+	font-size:11px;
+	font-weight:bold;
+    margin-top:10px;
+    padding:0px;
+    text-align:center;
+    text-transform:lowercase;
+    text-decoration:none;
+    background:url(../../upload/1/images/interfaccia/pulsante_medium_slim.png) no-repeat;
+    color:white;
+    border:0px;
+    cursor:pointer;
+}
+
+div.ricercarichieste select
+{
+    width:90%;
+}
+
+div.ricercaprodotti div.prodotto input
+{
+    margin-top:10px;
+}
+
+div.ricercaprodotti div.prodotto span
+{
+    float:left;
+    width:20px;
+    margin-top:10px;
+}
+
+div.ricercaprodotti
+{
+    border-top: 0px;
+    border-bottom: 2px solid #599ED1;
+    padding-bottom: 15px;
+}
+
+
+/***************************** pagina di invio email (stili come area amministrativa) *******************************/
+div.inviaemail
+{
+    float:left;
+    width:100%;
+}
+
+div.inviaemail div.email
+{
+    float:left;
+    width:100%;
+    border:1px solid #999999;
+}
+
+div.inviaemail h1.titolo
+{
+    float:left;
+    width:99%;
+    height:16px;
+    font-size:11px;
+    font-weight:bold;
+    padding-top:1px;
+    padding-left:5px;
+    border-bottom:1px solid #999999;
+    background-color:#DADBD5;
+    color:#666666;
+}
+
+div.inviaemail div.email div
+{
+    float:left;
+    width:100%;
+    min-height:16px;
+    padding-top:1px;
+    padding-bottom:1px;
+    border-bottom:1px solid #FFFFFF;
+    background-color:#F4F4F2;
+}
+
+div.inviaemail div.email div.avviso
+{
+    border:0px;
+    text-align:center;
+    font-size:11px;
+    font-weight:bold;
+}
+
+div.inviaemail div.email span.label
+{
+    float:left;
+    width:20%;
+    font-size:10px;
+    font-weight:bold;
+    padding-left:4px;
+    padding-right:4px;
+    vertical-align:top;
+    border-left:none;
+    color:#444444;
+    line-height:16px;
+    border-right:1px solid #ffffff;
+}
+
+div.inviaemail div.email span.value
+{
+    float:left;
+    font-size:11px;
+    font-weight:bold;
+    padding-left:4px;
+    padding-right:4px;
+    vertical-align:top;
+}
+
+div.inviaemail div.email div.allegato
+{
+    width:99%;
+    font-size:11px;
+    font-weight:bold;
+    padding-right:2px;
+    border-bottom:none;
+    background-color:#F4F4F2;
+    color:#666666;
+}
+
+div.inviaemail div.email div.allegato a
+{
+    float:right;
+    height:14px;
+    font-size:10px;
+    font-weight:bold;
+    line-height:14px;
+    padding-left:3px;
+    padding-right:2px;
+    text-align:center;
+    text-decoration:none !important;
+    text-transform:uppercase;
+    border:1px solid #777777;
+    background-color:#FFFFFF;
+    color:#777777;
+}
+
+div.inviaemail div.email div.testo
+{
+    padding-bottom:4px;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #999999;
+}
+
+div.inviaemail div.email div.testo textarea
+{
+    float:left;
+    font-size:11px;
+    border:1px solid #CCCCCC;
+    color:#000000;
+}
+
+div.inviaemail div.button
+{
+    float:left;
+    width:99%;
+    font-size:11px;
+    font-weight:bold;
+    text-align:right;
+    background-color:#E6E6E6;
+    color:#666666;
+}
+
+div.inviaemail div.button input
+{
+    float:right;
+    height:16px;
+    font-size:10px;
+    font-weight:bold;
+    margin-top:3px;
+    margin-bottom:2px;
+    margin-right:5px;
+    text-transform:uppercase;
+    border:1px solid #444444;
+    cursor:pointer;
+}
+
+
+/***************************** preventivo - consuntivo *******************************/
+div.schedapreventivo,
+div.schedaconsuntivo
+{
+    margin:20px 0px;
+}
+
+div.schedapreventivo div.dati div.modello span.label,
+div.schedapreventivo div.dati div.matricola span.label,
+div.schedapreventivo div.dati div.lista_accessori span.label,
+div.schedapreventivo div.dati div.altri_accessori span.label,
+div.schedaconsuntivo div.dati div.modello span.label,
+div.schedaconsuntivo div.dati div.matricola span.label,
+div.schedaconsuntivo div.dati div.lista_accessori span.label,
+div.schedaconsuntivo div.dati div.altri_accessori span.label
+{
+    width:155px !important;
+}
+
+/****************************************processo assistenza*************************/
+div.processoassistenza
+{
+	float: left;
+	margin-top: 15px;
+}
+
+div.processoassistenza ul
+{
+	float: left;
+	width: 165px;
+}
+
+div.processoassistenza ul li
+{
+	width: 151px;
+	min-height: 60px;
+	float: left;
+	border-bottom: 1px solid #599ed1;
+	padding: 7px;	
+}
+
+div.processoassistenza ul li.last
+{
+	border-bottom: 0px;
+}
+
+div.processoassistenza ul li div.titolo
+{
+	margin-top: 4px;
+	width: 130px;
+}
+
+div.processoassistenza ul li div.descrizione
+{
+	margin-top: 4px;
+	width: 130px;
+}
+
+div.processoassistenza ul li h1,
+div.processoassistenza ul li p
+{
+	color: #cccccc;
+}
+
+div.processoassistenza ul li p
+{
+	font-size: 11px;
+}
+
+div.processoassistenza ul li p.passo
+{
+	text-transform: uppercase;
+}
+
+div.processoassistenza ul li h1
+{
+	font-size: 14px;
+}
+
+div.processoassistenza ul li.selected 
+{
+	background:url(../../upload/1/images/interfaccia/freccia_sx.jpg) no-repeat right top;
+}
+
+div.processoassistenza ul li.selected h1
+{
+	color: #599ed1;
+}
+
+div.processoassistenza ul li.selected p
+{
+	color: #494949;
+}
+
+
+/* -------- elenco documenti --------- */
+
+div.elencodocumenti
+{
+    float:left;
+    padding-left:24px;
+    padding-top:0px;
+    padding-bottom:30px;
+    width: 90%;
+}
+
+div.elencodocumenti ul
+{
+    float:left;
+    width:100%;
+    border-top:2px solid #CCE7EE;
+}
+
+div.elencodocumenti h1.header
+{
+	font-size:20px;
+	color:#599ed1;
+	padding-bottom:5px;
+}
+
+div.elencodocumenti p
+{
+    color:#494949;
+    font-size:12px;
+    padding-bottom:15px;
+}
+
+div.elencodocumenti li
+{
+    float:left;
+    width:100%;
+    border-bottom:1px solid #5EA4BD;
+    padding-bottom:13px;
+    padding-top:15px;
+}
+
+div.elencodocumenti li a,
+div.elencodocumenti li p
+{
+    color:#494949;
+    font-size:12px;
+}
+
+div.elencodocumenti li p
+{
+    padding-top:4px;
+}
+
+div.elencodocumenti li a
+{
+    font-size:14px;
+}
+
+div.elencodocumenti li div.button a
+{
+    display:block;
+    line-height:25px;
+}
+
+div.elencodocumenti div.pager
+{
+    float:left;
+    padding-top:15px;
+}
+div.elencodocumenti div.pager span,
+div.elencodocumenti div.pager a
+{
+    padding-right:6px;
+    font-size:12px;
+    text-decoration:none;
+    color:#494949;
+}
+div.elencodocumenti div.pager a.current
+{
+    font-weight:bold;
+}
+
+/* --- menu categorie documenti --- */
+div.menucategoriedocumenti
+{
+    float:left;
+    padding-top:50px;
+    width:100%;
+}
+div.menucategoriedocumenti ul
+{
+    float:left;
+    width:100%;
+    border-top:2px solid #599ED1;
+}
+div.menucategoriedocumenti ul li
+{
+    float:left;
+    width:90%;
+    border-bottom:1px solid #599ED1;
+    padding-bottom:15px;
+    padding-top:15px;
+    padding-right:10%;
+}
+div.menucategoriedocumenti h1 a
+{
+    font-size:14px;
+    color:#599ED1;
+    display:block;
+    text-decoration:none;
+}
+div.menucategoriedocumenti p
+{
+    color:#494949;
+    font-size:11px;
+    padding-top:5px;
+}

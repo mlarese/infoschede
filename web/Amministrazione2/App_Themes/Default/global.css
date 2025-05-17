@@ -1,0 +1,568 @@
+﻿/*stili per il layout fisso*/
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+body,
+form {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 11px;
+	text-align: left;
+}
+
+td {
+	font-size: 11px;
+}
+
+input,
+button {
+	font-family : arial, helvetica, sans-serif;
+	font-size: 11px;
+	border:1px solid #999999;
+	background-color : #ffffff;
+}
+input:focus{
+	background-color:#fefef6;
+}
+
+select{
+	font-size: 11px;
+	color:#000000;
+}
+
+textarea{
+	color:#000000;
+	font-family : arial, helvetica, sans-serif;
+	font-size: 11px;
+	letter-spacing:1px;
+	border:1px solid #cccccc;
+}
+
+
+/****************************************************************************** MasterPage */
+div.container {
+	width: 740px;
+}
+div.container_ridotto {
+	width: 100%;
+}
+
+div.menu {
+	background-color: #E6E6E6;
+	border-bottom: 1px solid white;
+	height: 15px;
+	padding-top: 1px;
+}
+div.container_ridotto div.menu {
+	text-align: right;
+	padding-right: 5px;
+}
+div.menu ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+div.menu li.first {
+	padding-left: 15px;
+}
+div.menu li {
+	padding-left: 30px;
+}
+div.menu li.last {
+	float: right !important;
+	padding-right: 10px;
+}
+div.menu a {
+	font-size: 10px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+div.menu a:hover {
+	color:#E38000;
+	text-decoration: underline;
+}
+
+div.header {
+	height: 47px;
+	text-align: right;
+}
+div.header img {
+	position: absolute;
+	left: 0px;
+}
+div.header span {
+	position: relative;
+	top: 32px;
+	font-size: 10px;
+	padding-right: 3px;
+	font-weight: bold;
+}
+
+div.mainmessage {
+	text-align: right;
+	padding-top: 3px;
+	padding-left: 5px;
+}
+div.container_ridotto div.mainmessage {
+	padding-top: 0px;
+}
+div.sezione {
+	float: left;
+	font-size: 12px; 
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+div.sezione span,
+div.sottosezione span {
+	font-size: 10px; 
+	font-weight: bold;
+	letter-spacing: 0px;
+	padding-top: 2px;
+}
+div.sottosezione {
+	float: left;
+	padding-left: 20px;
+}
+div.sottosezione a {
+	font-size: 11px;
+	color: #666666;
+	padding-right: 10px;
+}
+div.pulsanti span {
+	font-size: 11px;
+}
+div.pulsanti * {
+	margin-left: 3px;
+}
+
+div.content {
+	clear: both;
+	margin-top: 10px;
+	padding-left: 4px;
+}
+
+
+/****************************************************************************** form */
+div.SearchArea { width: 27%; float:left; }
+
+div.ReportArea { width:72%; float: right; }
+
+table.tabella_madre,
+table.tabella_madre_elenco,
+table.tabella_madre_semplice {
+	border: 1px solid #999999;
+	border-top: 0px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+table.tabella_madre_elenco,
+table.tabella_madre_semplice {
+	margin-bottom: 0px;
+}
+table.interna {			/* modificatore della tabella_madre per renderla interna */
+	border: 0px;
+	margin: 0px;
+}
+
+table.tabella_madre table.row,
+table.tabella_madre_elenco table.row,
+table.tabella_madre_semplice table.row {
+	width: 100%;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+caption {
+	font-weight: bold;
+	color:#3D3D3D;
+	background-color : #DADBD5;
+	text-align : left;
+	padding-left : 4px;
+	border-color : #999999;
+	border-style: solid;
+	border-width: 1px;
+	border-bottom-width : 0px;
+	padding-bottom : 0px;
+}
+
+table.modifica caption,
+caption.border{
+	border-bottom-width:1px;
+}
+
+th,
+table.interna caption {
+	color: black;
+	padding-left : 4px;
+	padding-right: 4px;
+	text-align : left;
+	font-size: 10px;
+	border-bottom:1px solid #999999;
+	border-top:1px solid #999999;
+	background-color: #FFFFFF;
+	vertical-align : baseline;
+	text-transform:uppercase;
+}
+table.interna caption {
+	border-left: 0px;
+	border-right: 0px;
+}
+th.selected {
+	color:white;
+	background-color: #E99281;
+}
+
+th.l2,
+th.l2_center,
+th.l2_right,
+table.interna th,
+table.tabella_madre_semplice th.trovati {
+	color:#666;
+	border-bottom-color:#e6e6e6;
+	border-top-color:#e6e6e6;
+	text-transform:lowercase;
+}
+
+table.row td.th {
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color : #E6E6E6;
+}
+table.row h1 {
+	margin: 0px;			/* annulla margine su opera	 */
+	font-size: 11px;
+	float: left;
+}
+table.row td div {
+	float: right;
+}
+
+td.label,
+td.input,
+td.content,
+td.content_right,
+td.content_center,
+td.content_b,
+td.input_disabled,
+td.content_disabled,
+td.content_right_disabled,
+td.content_center_disabled,
+td.content_b_disabled,
+tr.precsucc,
+table.tabella_madre_semplice td,
+table.interna th.trovati,
+table.tabella_madre_semplice th.trovati {
+	color: black;
+	border: 0px;
+	padding-left : 4px;
+	padding-right : 4px;
+	vertical-align : top;
+	background-color : #F4F4F2;
+}
+
+td.label {
+	width:15%;
+	color:#444444;
+	font-size : 10px;
+	font-weight : bold;
+}
+
+td.content_b,
+td.content_b_disabled{
+	font-weight:bold;
+}
+
+td.content_center,
+td.content_center_disabled{
+	padding:0px;
+	text-align: center;
+}
+
+td.content_right,
+td.content_right_disabled {
+	text-align: right;
+}
+
+td.input_disabled,
+td.content_disabled,
+td.content_right_disabled,
+td.content_center_disabled,
+td.content_b_disabled{
+	color:#666666;
+}
+
+td.footer{
+	font-size : 10px;
+	font-weight : bold;
+	border-top : 1px solid #999999;
+	background-color : #E6E6E6;
+	text-align : right;
+	padding : 1px;
+	padding-left : 5px;
+	padding-right : 5px;
+	vertical-align : top;
+}
+
+td.note {
+	font-size:10px;
+	font-weight:bold;
+	color: #666666;
+}
+
+div.pager {
+	background-color: #E6E6E6;
+	border: 1px solid #999999;
+	border-top: 0px;
+	padding: 1px;
+	padding-left: 5px;
+}
+
+tr.precsucc,
+tr.precsucc td {
+	padding: 0px;
+	margin: 0px;
+}
+tr.precsucc table {
+	float: right;
+}
+
+/****************************************************************************** delete */
+table.delete {
+	border-bottom : 1px solid #999999;
+}
+
+table.delete td.immagine,
+table.delete td.content {
+	padding: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+table.delete div.conferma {
+	text-align: center;
+	padding-top: 10px;
+}
+
+table.delete td.content p {
+	margin: 0px;
+}
+
+/****************************************************************************** generali */
+a {
+	text-decoration: none;
+	color: black;
+}
+a.button,
+a.button_disabled,
+a.button_input,
+a.button_input_left,
+div.pager a,
+div.pager span,
+tr.precsucc a,
+button.button_input_left {
+	font-size : 10px;
+	font-weight : bold;
+	background-color : #FFFFFF;
+	border : 1px solid #444444;
+	padding: 1px;
+	padding-left : 8px;
+	padding-right : 8px;
+	text-transform : uppercase;
+	line-height: 16px;
+}
+a.button:hover,
+a.button_input:hover,
+a.button_input_left:hover,
+div.pager a:hover,
+tr.precsucc a:hover,
+button.button_input_left:hover {
+	text-decoration: none;
+	color:#E38000;
+	background-color : #F4F4F2;
+}
+
+a.button_disabled,
+div.pager span {
+	background-color : #f0f0ea;
+	border-color : #c9c7ba;
+	color:#aca899;
+	cursor:default;
+}
+
+a.button_input,
+a.button_input_left {
+	color: #999999;
+	border : 1px solid #999999;
+	height: 14px;
+	line-height: 14px;
+}
+a.button_input_left {
+	border-left: 0px;
+}
+
+input.button,
+input.button_disabled,
+input.button_link_like,
+input.button_link_like_disabled{
+	font-size : 10px;
+	font-weight : bold;
+	border : 1px solid #444444;
+	height:16px;
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+
+input.checkbox,
+span.checkbox input,
+table.tabella_madre_elenco input,
+table.tabella_madre_semplice input {
+	border:0px;
+	background-color : transparent;
+	height:15px;
+}
+
+span.inputalign *,
+span.inputalign_multiple * {		/* contiene input che devono essere allineati verticalmente */
+	float: left;
+}
+span.inputalign_multiple a {
+	display: block;
+	float: none;
+	width: 40px;
+	height: 19px;
+	line-height: 19px;
+}
+td.content_center span.inputalign input,
+td.content_center span.inputalign_multiple input {
+	margin-left: 4px;
+}
+
+span.validator,
+span.validator * {
+	float: none;					/* tolgo il float eventualmente assegnato dallo span.inputalign */
+}
+
+div.errors ul {
+	clear: both;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	background-color: red;
+	color: white;
+}
+
+.elenco {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/****************************************************************************** calendario */
+table.calendar {
+	border: 1px solid #999999;
+	margin: 5px;
+}
+
+table.calendar table.title {
+	font-weight: bold;
+	background-color : #E6E6E6;
+	border: 0px;
+	padding: 2px;
+}
+table.calendar table.title td {
+	text-align: center !important;
+}
+
+/* disabilitati */
+table.calendar td.day,
+table.calendar td.weekendday,
+table.calendar td.othermonth,
+table.calendar td.today,
+table.calendar td.selectedday {
+	background-color: #F4F4F2;
+	color: #ACA899;
+}
+
+/* tutti */
+table.calendar td.day a,
+table.calendar td.weekendday a,
+table.calendar td.othermonth a,
+table.calendar td.today a,
+table.calendar td.selectedday a {
+	background-color: #F4F4F2;
+	text-decoration: underline;
+	color: #444444;
+	width: 100%;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+table.calendar td.today a {
+	color:#E38000;
+	background-color: white;
+}
+
+table.calendar td.othermonth a{
+	color:#666666 !important;
+}
+
+table.calendar td.yesterdays a {
+	color: #999999 !important;
+}
+
+/* hover */
+table.calendar td.day a:hover,
+table.calendar td.weekendday a:hover,
+table.calendar td.othermonth a:hover,
+table.calendar td.today a:hover,
+table.calendar td.selectedday a:hover {
+	font-weight: bold;
+	background-color : #E6E6E6;
+}
+
+/* selected */
+table.calendar td.selectedday a,
+table.calendar td.selectedday a:hover,
+table.calendar a:hover {
+	text-decoration: underline;
+	color:#E38000;
+}
+table.calendar td.selectedday a {
+	background-color: #E6E6E6;
+}
+
+/**********************************************************************************************************************************************************************************************************************/
+/**********************************************************************************************************************************************************************************************************************/
+/**********************************************************************************************************************************************************************************************************************/
+/**********************************************************************************************************************************************************************************************************************/
+/* modificatori degli stili per i vari applicativi (operano solo su colore carattere e sfondo)
+/**********************************************************************************************************************************************************************************************************************/
+/**********************************************************************************************************************************************************************************************************************/
+/**********************************************************************************************************************************************************************************************************************/
+/**********************************************************************************************************************************************************************************************************************/
+
+/***********************************************************************************************************/
+/* modificatori generali  */
+/***********************************************************************************************************/
+.alert{
+	background-color: #ff9fa2 !important;
+	color: #ffffff !important;
+}
+
+.warning{
+	color : #8e8301 !important;
+	background-color: #f9f9b4 !important;
+}
+
+.ok{
+	background-color: #d7efd7 !important;
+}
+
+.visibile{
+	background-color : #d0e4f5 !important;
+}

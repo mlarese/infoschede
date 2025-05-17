@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Amministrazione2/Test/testfile2.aspx" hash="fffffff64ee0c077" filehash="ffffd99ef6b1a879" flags="100000" assembly="App_Web_kelmuifo" type="ASP.test_testfile2_aspx">
+    <filedeps>
+        <filedep name="/Amministrazione2/Test/testfile2.aspx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Amministrazione2/NextComment/ValutazioniModifica.aspx" hash="358a9b8cb" filehash="ed3307bb576f45e2" flags="100000" assembly="App_Web_lhygo0oy" type="ASP.nextcomment_valutazionimodifica_aspx">
+    <filedeps>
+        <filedep name="/Amministrazione2/NextComment/MPMain.master" />
+        <filedep name="/Amministrazione2/NextComment/MPMain.master.cs" />
+        <filedep name="/Amministrazione2/NextComment/ValutazioniModifica.aspx" />
+        <filedep name="/Amministrazione2/NextComment/ValutazioniModifica.aspx.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,1 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="RedirectAutenticati.ascx.cs" Inherits="Plugin_RedirectAutenticati" %>
